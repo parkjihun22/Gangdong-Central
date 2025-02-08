@@ -62,14 +62,14 @@ const BusinessGuide2 = () => {
 	return (
 		<div className={styles.container}>
 			<Helmet>
-					<title>대전 하늘채 스카이앤 3차 - 당첨자서류안내</title>
-					<meta name="description" content="대전 하늘채 스카이앤 3차 청약 당첨자를 위한 필수 서류 목록과 준비 절차를 안내합니다. 간단하고 명확한 정보로 청약 당첨 후 필요한 준비를 돕고, 서류 제출에 문제가 없도록 상세한 가이드를 제공합니다" />
-					<meta property="og:title" content="대전 하늘채 스카이앤 3차 - 당첨자서류안내" />
-					<meta property="og:description" content="대전 하늘채 스카이앤 3차 청약 당첨자를 위한 필수 서류 목록과 준비 절차를 안내합니다. 간단하고 명확한 정보로 청약 당첨 후 필요한 준비를 돕고, 서류 제출에 문제가 없도록 상세한 가이드를 제공합니다" />
+					<title>강동역 센트럴파크 - 당첨자서류안내</title>
+					<meta name="description" content="강동역 센트럴파크 청약 당첨자를 위한 필수 서류 목록과 준비 절차를 안내합니다. 간단하고 명확한 정보로 청약 당첨 후 필요한 준비를 돕고, 서류 제출에 문제가 없도록 상세한 가이드를 제공합니다" />
+					<meta property="og:title" content="강동역 센트럴파크 - 당첨자서류안내" />
+					<meta property="og:description" content="강동역 센트럴파크 청약 당첨자를 위한 필수 서류 목록과 준비 절차를 안내합니다. 간단하고 명확한 정보로 청약 당첨 후 필요한 준비를 돕고, 서류 제출에 문제가 없도록 상세한 가이드를 제공합니다" />
 					<meta property="og:image" content="http://www.kikaporn.com/Main1.png" />
 					<meta property="og:url" content="http://www.kikaporn.com/BusinessGuide/documents" />
-					<meta name="twitter:title" content="대전 하늘채 스카이앤 3차 - 당첨자서류안내" />
-					<meta name="twitter:description" content="대전 하늘채 스카이앤 3차 청약 당첨자를 위한 필수 서류 목록과 준비 절차를 안내합니다. 간단하고 명확한 정보로 청약 당첨 후 필요한 준비를 돕고, 서류 제출에 문제가 없도록 상세한 가이드를 제공합니다" />
+					<meta name="twitter:title" content="강동역 센트럴파크 - 당첨자서류안내" />
+					<meta name="twitter:description" content="강동역 센트럴파크 청약 당첨자를 위한 필수 서류 목록과 준비 절차를 안내합니다. 간단하고 명확한 정보로 청약 당첨 후 필요한 준비를 돕고, 서류 제출에 문제가 없도록 상세한 가이드를 제공합니다" />
 					<meta name="twitter:image" content="http://www.kikaporn.com/Main1.png" />
 					<meta name="twitter:url" content="http://www.kikaporn.com/BusinessGuide/documents" />
 					</Helmet>   
@@ -79,16 +79,16 @@ const BusinessGuide2 = () => {
 			<Bener title="사업개요" />
 			<MenuBar contents={menuContents} />
 			{/* <h1> 태그를 사용하여 페이지 제목 설정 (SEO 최적화) */}
-            <h1 className={styles.screenReaderOnly}>대전 하늘채 스카이앤 3차- 계약서류안내</h1>
+            <h1 className={styles.screenReaderOnly}>강동역 센트럴파크- 계약서류안내</h1>
 			<p className={styles.screenReaderOnly}>계약서류안내 페이지지에서는 분양 당첨 후 필요한 서류들에 대해 안내합니다. 계약 체결을 위해 준비해야 할 서류 목록과 함께, 각 서류의 제출 기한과 정확한 준비 방법을 안내하여 고객들이 혼동 없이 준비할 수 있도록 돕습니다.</p>
 
 			<div className={styles.textBox}>
-				<div>대전의 눈부신 가치 위에</div>
-				<div>대전 하늘채 스카이앤 3차의 새로운 자부심으로 찾아옵니다.</div>
+				<div>강동의 눈부신 가치 위에</div>
+				<div>강동역 센트럴파크의 새로운 자부심으로 찾아옵니다.</div>
 			</div>
 
 			{/* 이미지에 isImageVisible 상태 적용
-			<img className={`${styles.image4} ${isImageVisible ? styles.visible : ''}`} src={page1} alt="대전 하늘채 스카이앤 3차 계약서류안내-image1" /> */}
+			<img className={`${styles.image4} ${isImageVisible ? styles.visible : ''}`} src={page1} alt="강동역 센트럴파크 계약서류안내-image1" /> */}
 
 			<Ready />
 			<Footer /> 

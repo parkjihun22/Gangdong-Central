@@ -64,14 +64,14 @@ const LocationEnvironment1 = () => {
 		<div className={styles.container}>
 
 					<Helmet>
-					<title>대전 하늘채 스카이앤 3차 - 입지안내</title>
-					<meta name="description" content="대전 하늘채 스카이앤 3차의 입지 정보를 확인하세요. 뛰어난 교통망, 생활 인프라, 교육 및 쇼핑 시설 등 편리한 주변 환경을 소개하며, 평택의 중심에서 누릴 수 있는 생활의 편리함과 가치를 제공합니다" />
-					<meta property="og:title" content="대전 하늘채 스카이앤 3차 - 입지안내" />
-					<meta property="og:description" content="대전 하늘채 스카이앤 3차의 입지 정보를 확인하세요. 뛰어난 교통망, 생활 인프라, 교육 및 쇼핑 시설 등 편리한 주변 환경을 소개하며, 평택의 중심에서 누릴 수 있는 생활의 편리함과 가치를 제공합니다" />
+					<title>강동역 센트럴파크 - 입지안내</title>
+					<meta name="description" content="강동역 센트럴파크의 입지 정보를 확인하세요. 뛰어난 교통망, 생활 인프라, 교육 및 쇼핑 시설 등 편리한 주변 환경을 소개하며, 평택의 중심에서 누릴 수 있는 생활의 편리함과 가치를 제공합니다" />
+					<meta property="og:title" content="강동역 센트럴파크 - 입지안내" />
+					<meta property="og:description" content="강동역 센트럴파크의 입지 정보를 확인하세요. 뛰어난 교통망, 생활 인프라, 교육 및 쇼핑 시설 등 편리한 주변 환경을 소개하며, 평택의 중심에서 누릴 수 있는 생활의 편리함과 가치를 제공합니다" />
 					<meta property="og:image" content="http://www.kikaporn.com/Main1.png" />
 					<meta property="og:url" content="http://www.kikaporn.com/LocationEnvironment/intro" />
-					<meta name="twitter:title" content="대전 하늘채 스카이앤 3차 - 입지안내" />
-					<meta name="twitter:description" content="대전 하늘채 스카이앤 3차의 입지 정보를 확인하세요. 뛰어난 교통망, 생활 인프라, 교육 및 쇼핑 시설 등 편리한 주변 환경을 소개하며, 평택의 중심에서 누릴 수 있는 생활의 편리함과 가치를 제공합니다" />
+					<meta name="twitter:title" content="강동역 센트럴파크 - 입지안내" />
+					<meta name="twitter:description" content="강동역 센트럴파크의 입지 정보를 확인하세요. 뛰어난 교통망, 생활 인프라, 교육 및 쇼핑 시설 등 편리한 주변 환경을 소개하며, 평택의 중심에서 누릴 수 있는 생활의 편리함과 가치를 제공합니다" />
 					<meta name="twitter:image" content="http://www.kikaporn.com/Main1.png" />
 					<meta name="twitter:url" content="http://www.kikaporn.com/LocationEnvironment/intro" />
 					</Helmet> 	
@@ -83,16 +83,16 @@ const LocationEnvironment1 = () => {
 
 			<MenuBar contents={menuContents} />
 			{/* <h1> 태그를 사용하여 페이지 제목 설정 (SEO 최적화) */}
-			<h1 className={styles.screenReaderOnly}>대전 하늘채 스카이앤 3차 - 입지안내</h1>
-			<p className={styles.screenReaderOnly}>대전 하늘채 스카이앤 3차의 입지 정보를 확인하세요. 뛰어난 교통망, 생활 인프라, 교육 및 쇼핑 시설 등 편리한 주변 환경을 소개하며, 평택의 중심에서 누릴 수 있는 생활의 편리함과 가치를 제공합니다
+			<h1 className={styles.screenReaderOnly}>강동역 센트럴파크 - 입지안내</h1>
+			<p className={styles.screenReaderOnly}>강동역 센트럴파크의 입지 정보를 확인하세요. 뛰어난 교통망, 생활 인프라, 교육 및 쇼핑 시설 등 편리한 주변 환경을 소개하며, 평택의 중심에서 누릴 수 있는 생활의 편리함과 가치를 제공합니다
 			</p>
 
 			<div className={styles.textBox}>
 				<div>살수록 높아질 코오롱 스카이앤</div>
-				<div>도시를 압도할 자부심 대전 하늘채 스카이앤 3차</div>
+				<div>도시를 압도할 자부심강동역 센트럴파크</div>
 			</div>
 
-			{/* <img src={page1} className={styles.image2} alt="대전 하늘채 스카이앤 3차-image1" /> */}
+			{/* <img src={page1} className={styles.image2} alt="강동역 센트럴파크 3-image1" /> */}
 			
 			<Ready />
 			{/* <div className={styles.section2}>

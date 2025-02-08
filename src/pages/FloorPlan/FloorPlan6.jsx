@@ -59,13 +59,13 @@ const FloorPlan6 = () => {
 			<Header isChanged={isScroll} />
 			<FixIcon />
 
-			<Bener title="대전 하늘채 스카이앤 3차 119B 평면image" />
+			<Bener title="강동 하늘채 스카이앤 3차 119B 평면image" />
 
 			<MenuBar contents={menuContents} />
 
 			<div className={styles.textBox}>
-				<div>대전의 눈부신 가치 위에</div>
-				<div>코오롱의 새로운 자부심으로 찾아옵니다.</div>
+				<div>강동의 눈부신 가치 위에</div>
+				<div>센트럴파크의 새로운 자부심으로 찾아옵니다.</div>
 			</div>
 
 			{/* 이미지에 애니메이션 효과 추가 */}

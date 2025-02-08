@@ -20,7 +20,7 @@ const Bener = ({ title }) => {
             <img
                 className={`${styles.benerImage} ${isLoaded ? styles.showImage : ''}`}
                 src={img}
-                alt="대전 하늘채 스카이앤3차-benerimage"
+                alt="강동역 센트럴파크-benerimage"
             />
             <div className={styles.overlay}></div>
             <div
@@ -40,17 +40,17 @@ const Bener = ({ title }) => {
 export default Bener;
 
 const contents = (text, isLoaded) => {
-    if (text === '대전 하늘채 스카이앤' || text === '홍보영상' || text === '체크포인트'| text === '당첨자서류안내') {
+    if (text === '강동역 센트럴파크' || text === '홍보영상' || text === '체크포인트'| text === '당첨자서류안내') {
         return (
             <>
                 <div className={`${styles.text} ${isLoaded ? styles.showText : ''}`}>
                     지친 하루를 마치고 가장 나에 가까운 본연의 모습으로 돌아와 누리는 프리미엄입니다.
                 </div>
                 <div className={`${styles.text} ${isLoaded ? styles.showText : ''}`}>
-                    대전의 최상단 중심
+                    강동의 최상단 중심
                 </div>
                 <div className={`${styles.text} ${isLoaded ? styles.showText : ''}`}>
-                    NO.1 브랜드 대전 하늘채 스카이앤3차와 함께합니다.
+                    NO.1 브랜드 강동역 센트럴파크와 함께합니다.
                 </div>
             </>
         );
@@ -67,7 +67,7 @@ const contents = (text, isLoaded) => {
                     가장 높은 브랜드의 첫 시작
                 </div>
                 <div className={`${styles.text} ${isLoaded ? styles.showText : ''}`}>
-                    대전 하늘채 스카이앤3차
+                강동역 센트럴파크
                 </div>
             </>
         );
@@ -75,10 +75,10 @@ const contents = (text, isLoaded) => {
         return (
             <>
                 <div className={`${styles.text} ${isLoaded ? styles.showText : ''}`}>
-                    수준 높은 생활, 대전중심내 착한 아파트
+                    수준 높은 생활, 강동 중심내 착한 아파트
                 </div>
                 <div className={`${styles.text} ${isLoaded ? styles.showText : ''}`}>
-                    기대하던 모든 프리미엄이 대전 하늘채 스카이앤에서 펼쳐집니다
+                    기대하던 모든 프리미엄이 대강동역 센트럴파크에서 펼쳐집니다
                 </div>
             </>
         );
@@ -92,7 +92,7 @@ const contents = (text, isLoaded) => {
                     편리한 생활을 위한 최적의 공간설계
                 </div>
                 <div className={`${styles.text} ${isLoaded ? styles.showText : ''}`}>
-                    소수에게만 허락된 대전 하늘채 스카이앤3차, 높은 가치로  찾아옵니다
+                    소수에게만 허락된 강동역 센트럴파크, 높은 가치로  찾아옵니다
                 </div>
             </>
         );

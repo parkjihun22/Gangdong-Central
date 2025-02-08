@@ -50,14 +50,14 @@ const ComplexGuide1 = () => {
 		<div className={styles.container}>
 
 			<Helmet>
-				<title>대전 하늘채 스카이앤 3차 - 호수배치도</title>
-				<meta name="description" content="대전 하늘채 스카이앤 3차의 호수 배치도를 통해 각 세대의 위치와 전망을 확인하세요. 주거 만족도를 높이는 체계적인 배치 설계로 더 나은 라이프스타일을 제안합니다." />
-				<meta property="og:title" content="대전 하늘채 스카이앤 3차 - 호수배치도" />
-				<meta property="og:description" content="대전 하늘채 스카이앤 3차의 호수 배치도를 통해 각 세대의 위치와 전망을 확인하세요. 주거 만족도를 높이는 체계적인 배치 설계로 더 나은 라이프스타일을 제안합니다." />
+				<title>강동역 센트럴파크 - 호수배치도</title>
+				<meta name="description" content="강동역 센트럴파크의 호수 배치도를 통해 각 세대의 위치와 전망을 확인하세요. 주거 만족도를 높이는 체계적인 배치 설계로 더 나은 라이프스타일을 제안합니다." />
+				<meta property="og:title" content="강동역 센트럴파크 - 호수배치도" />
+				<meta property="og:description" content="강동역 센트럴파크의 호수 배치도를 통해 각 세대의 위치와 전망을 확인하세요. 주거 만족도를 높이는 체계적인 배치 설계로 더 나은 라이프스타일을 제안합니다." />
 				<meta property="og:image" content="http://www.kikaporn.com/Main1.png" />
 				<meta property="og:url" content="http://www.kikaporn.com/ComplexGuide/detailintro" />
-				<meta name="twitter:title" content="대전 하늘채 스카이앤 3차 - 호수배치도" />
-				<meta name="twitter:description" content="대전 하늘채 스카이앤 3차의 호수 배치도를 통해 각 세대의 위치와 전망을 확인하세요. 주거 만족도를 높이는 체계적인 배치 설계로 더 나은 라이프스타일을 제안합니다." />
+				<meta name="twitter:title" content="강동역 센트럴파크 - 호수배치도" />
+				<meta name="twitter:description" content="강동역 센트럴파크의 호수 배치도를 통해 각 세대의 위치와 전망을 확인하세요. 주거 만족도를 높이는 체계적인 배치 설계로 더 나은 라이프스타일을 제안합니다." />
 				<meta name="twitter:image" content="http://www.kikaporn.com/Main1.png" />
 				<meta name="twitter:url" content="http://www.kikaporn.com/ComplexGuide/detailintro" />
 			</Helmet> 
@@ -66,13 +66,13 @@ const ComplexGuide1 = () => {
 			<FixIcon />
 			<Bener title="단지안내" />
 			<MenuBar contents={menuContents} />
-			<h1 className={styles.screenReaderOnly}>대전 하늘채 스카이앤 3차 - 호수배치도</h1>
+			<h1 className={styles.screenReaderOnly}>강동역 센트럴파크 - 호수배치도</h1>
 			<p className={styles.screenReaderOnly}>
 				호수 배치도 페이지는 각 세대의 위치와 평면도를 제공합니다. 고객들이 원하는 호수를 찾고 세부적인 배치 정보를 통해 자신의 집을 상상할 수 있게 돕습니다. 각 호수의 특징과 장점을 살펴보며 선택의 폭을 넓힐 수 있습니다.
 			</p>
 
 			<div className={styles.textBox}>
-				<div>대전 하늘채 스카이앤 3차가 눈부신 가치 위에</div>
+				<div>대강동역 센트럴파크가 눈부신 가치 위에</div>
 				<div>새로운 자부심으로 찾아옵니다.</div>
 			</div>
 
@@ -80,7 +80,7 @@ const ComplexGuide1 = () => {
 			{/* <img
 				className={`${styles.image2} ${isImage2Loaded ? styles.showImage2 : ''}`}
 				src={page1}
-				alt="대전 하늘채 스카이앤 3차 호수배치도-image1"
+				alt="강동역 센트럴파크 호수배치도-image1"
 				onLoad={handleImageLoad}  // 이미지 로드 후 애니메이션 실행
 			/> */}
 

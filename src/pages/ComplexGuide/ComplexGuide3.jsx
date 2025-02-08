@@ -51,14 +51,14 @@ const ComplexGuide3 = () => {
 		<div className={styles.container}>
 
 					<Helmet>
-					<title>대전 하늘채 스카이앤 3차 - 커뮤니티</title>
-					<meta name="description" content="대전 하늘채 스카이앤 3차의 커뮤니티 시설을 소개합니다. 피트니스 센터, 독서실, 카페 등 다양한 편의시설이 마련되어 있어 입주민의 생활 품격을 높이고, 편리함을 제공합니다." />
-					<meta property="og:title" content="대전 하늘채 스카이앤 3차 - 커뮤니티" />
-					<meta property="og:description" content="대전 하늘채 스카이앤 3차의 커뮤니티 시설을 소개합니다. 피트니스 센터, 독서실, 카페 등 다양한 편의시설이 마련되어 있어 입주민의 생활 품격을 높이고, 편리함을 제공합니다." />
+					<title>강동역 센트럴파크 - 커뮤니티</title>
+					<meta name="description" content="강동역 센트럴파크의 커뮤니티 시설을 소개합니다. 피트니스 센터, 독서실, 카페 등 다양한 편의시설이 마련되어 있어 입주민의 생활 품격을 높이고, 편리함을 제공합니다." />
+					<meta property="og:title" content="강동역 센트럴파크 - 커뮤니티" />
+					<meta property="og:description" content="강동역 센트럴파크의 커뮤니티 시설을 소개합니다. 피트니스 센터, 독서실, 카페 등 다양한 편의시설이 마련되어 있어 입주민의 생활 품격을 높이고, 편리함을 제공합니다." />
 					<meta property="og:image" content="http://www.kikaporn.com/Main1.png" />
 					<meta property="og:url" content="http://www.kikaporn.com/ComplexGuide/community" />
-					<meta name="twitter:title" content="대전 하늘채 스카이앤 3차 - 커뮤니티" />
-					<meta name="twitter:description" content="대전 하늘채 스카이앤 3차의 커뮤니티 시설을 소개합니다. 피트니스 센터, 독서실, 카페 등 다양한 편의시설이 마련되어 있어 입주민의 생활 품격을 높이고, 편리함을 제공합니다." />
+					<meta name="twitter:title" content="강동역 센트럴파크 - 커뮤니티" />
+					<meta name="twitter:description" content="강동역 센트럴파크의 커뮤니티 시설을 소개합니다. 피트니스 센터, 독서실, 카페 등 다양한 편의시설이 마련되어 있어 입주민의 생활 품격을 높이고, 편리함을 제공합니다." />
 					<meta name="twitter:image" content="http://www.kikaporn.com/Main1.png" />
 					<meta name="twitter:url" content="http://www.kikaporn.com/ComplexGuide/community" />
 					</Helmet> 
@@ -69,13 +69,13 @@ const ComplexGuide3 = () => {
 			<Bener title="단지안내" />
 			<MenuBar contents={menuContents} />
 			{/* <h1> 태그를 사용하여 페이지 제목 설정 (SEO 최적화) */}
-            <h1 className={styles.screenReaderOnly}>대전 하늘채 스카이앤 3차  - 커뮤니티</h1>
-			<p className={styles.screenReaderOnly}>대전 하늘채 스카이앤 3차의 커뮤니티 페이지에서는 단지 내 다양한 커뮤니티 시설을 소개합니다. 헬스장, 독서실, 카페 등 주민들의 편리한 생활을 위한 다양한 시설들이 준비되어 있습니다. 이러한 시설들이 입주민들의 삶의 질을 높이고, 더 나은 공동체 생활을 만들어주는 역할을 합니다.
+            <h1 className={styles.screenReaderOnly}>강동역 센트럴파크  - 커뮤니티</h1>
+			<p className={styles.screenReaderOnly}>강동역 센트럴파크의 커뮤니티 페이지에서는 단지 내 다양한 커뮤니티 시설을 소개합니다. 헬스장, 독서실, 카페 등 주민들의 편리한 생활을 위한 다양한 시설들이 준비되어 있습니다. 이러한 시설들이 입주민들의 삶의 질을 높이고, 더 나은 공동체 생활을 만들어주는 역할을 합니다.
 			</p>
 
 
 			<div className={styles.textBox}>
-				<div>힐대전 하늘채 스카이앤 3차가 눈부신 가치 위에</div>
+				<div>강동역 센트럴파크가 눈부신 가치 위에</div>
 				<div>새로운 자부심으로 찾아옵니다.</div>
 			</div>
 
@@ -83,7 +83,7 @@ const ComplexGuide3 = () => {
 			{/* <img
 				className={`${styles.image2} ${isImage2Loaded ? styles.showImage2 : ''}`}
 				src={page1}
-				alt="대전 하늘채 스카이앤 3차 커뮤니티 안내 -image1"
+				alt="강동역 센트럴파크 커뮤니티 안내 -image1"
 				onLoad={handleImageLoad}  // 이미지 로드 후 애니메이션 실행
 			/> */}
 

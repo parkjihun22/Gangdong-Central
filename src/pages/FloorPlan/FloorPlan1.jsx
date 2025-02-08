@@ -58,14 +58,14 @@ const FloorPlan1 = () => {
 	return (
 		<div className={styles.container}>
 					<Helmet>
-					<title>대전 하늘채 스카이앤 3차- 평면안내</title>
-					<meta name="description" content="대전 하늘채 스카이앤 3차의 평면도를 통해 세대별 구조와 공간 활용도를 확인하세요. 실용적이고 혁신적인 설계를 기반으로 한 다양한 평면 구성이 여러분의 생활을 더 편리하게 만듭니다." />
-					<meta property="og:title" content="대전 하늘채 스카이앤 3차 - 59A" />
-					<meta property="og:description" content="대전 하늘채 스카이앤 3차의 평면도를 통해 세대별 구조와 공간 활용도를 확인하세요. 실용적이고 혁신적인 설계를 기반으로 한 다양한 평면 구성이 여러분의 생활을 더 편리하게 만듭니다." />
+					<title>강동역 센트럴파크- 평면안내</title>
+					<meta name="description" content="강동역 센트럴파크의 평면도를 통해 세대별 구조와 공간 활용도를 확인하세요. 실용적이고 혁신적인 설계를 기반으로 한 다양한 평면 구성이 여러분의 생활을 더 편리하게 만듭니다." />
+					<meta property="og:title" content="강동역 센트럴파크 - 59A" />
+					<meta property="og:description" content="강동역 센트럴파크의 평면도를 통해 세대별 구조와 공간 활용도를 확인하세요. 실용적이고 혁신적인 설계를 기반으로 한 다양한 평면 구성이 여러분의 생활을 더 편리하게 만듭니다." />
 					<meta property="og:image" content="http://www.kikaporn.com/Main1.png" />
 					<meta property="og:url" content="http://www.kikaporn.com/FloorPlan/59A" />
-					<meta name="twitter:title" content="대전 하늘채 스카이앤 3차- 59A" />
-					<meta name="twitter:description" content="대전 하늘채 스카이앤 3차의 평면도를 통해 세대별 구조와 공간 활용도를 확인하세요. 실용적이고 혁신적인 설계를 기반으로 한 다양한 평면 구성이 여러분의 생활을 더 편리하게 만듭니다." />
+					<meta name="twitter:title" content="강동역 센트럴파크  59A" />
+					<meta name="twitter:description" content="강동역 센트럴파크의 평면도를 통해 세대별 구조와 공간 활용도를 확인하세요. 실용적이고 혁신적인 설계를 기반으로 한 다양한 평면 구성이 여러분의 생활을 더 편리하게 만듭니다." />
 					<meta name="twitter:image" content="http://www.kikaporn.com/Main1.png" />
 					<meta name="twitter:url" content="http://www.kikaporn.com/FloorPlan/59A" />
 					</Helmet>  
@@ -77,20 +77,20 @@ const FloorPlan1 = () => {
 
 			<MenuBar contents={menuContents} />
 			{/* <h1> 태그를 사용하여 페이지 제목 설정 (SEO 최적화) */}
-            <h1 className={styles.screenReaderOnly}>대전 하늘채 스카이앤 3차 - 평면안내</h1>
-			<p className={styles.screenReaderOnly}>59타입의평면 안내 페이지는 대전 하늘채 스카이앤 3차의 각 아파트 평면도를 제공합니다. 고객들이 아파트의 구조를 정확히 이해하고, 자신의 생활 스타일에 맞는 평형을 선택할 수 있도록 돕습니다. 다양한 평면 설계를 확인하고 자신에게 맞는 최적의 공간을 찾아보세요.
+            <h1 className={styles.screenReaderOnly}>강동역 센트럴파크 - 평면안내</h1>
+			<p className={styles.screenReaderOnly}>59타입의평면 안내 페이지는 강동역 센트럴파크의 각 아파트 평면도를 제공합니다. 고객들이 아파트의 구조를 정확히 이해하고, 자신의 생활 스타일에 맞는 평형을 선택할 수 있도록 돕습니다. 다양한 평면 설계를 확인하고 자신에게 맞는 최적의 공간을 찾아보세요.
 			</p>
 
 			<div className={styles.textBox}>
-				<div>대전의 눈부신 가치 위에</div>
-				<div>힐스테이트의 새로운 자부심으로 찾아옵니다.</div>
+				<div>강동의 눈부신 가치 위에</div>
+				<div>센트럴파크의 새로운 자부심으로 찾아옵니다.</div>
 			</div>
 
 			{/* 이미지에 애니메이션 효과 추가 */}
 			{/* <img
 				className={`${styles.image2} ${isImage2Loaded ? styles.showImage2 : ''}`}
 				src={page1}
-				alt="대전 하늘채 스카이앤 3차 59타입의평면안내-image1"
+				alt="강동역 센트럴파크 59타입의평면안내-image1"
 				onLoad={handleImageLoad}  // 이미지 로드 후 애니메이션 실행
 			/> */}
 

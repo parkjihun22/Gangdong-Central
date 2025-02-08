@@ -196,7 +196,7 @@ const Main = () => {
               <div className={styles.mainImageTitleBox}>
                 <div className={styles.mainImageText}>강동역 센트럴파크</div>
                 <div className={styles.grandOpenText}>4월 GRAND OPEN 예정</div>
-                <div className={styles.grandOpenText1}>사전 청약 접수중</div> 
+                <div className={styles.grandOpenText1}>사전 접수중</div> 
               </div>
               <div>
               <a href="#interestForm">
@@ -238,7 +238,7 @@ const Main = () => {
             </div>
           </div> */}
 
-          {/* <div className={styles.section}>
+          <div className={styles.section}>
             <div className={styles.section8}>
               <div className={styles.textBox}>
                 <div className={styles.title}>
@@ -465,7 +465,7 @@ const Main = () => {
 
                 <div className={styles.mainImageText1}>강동역 센트럴파크</div>
                 <div className={styles.grandOpenText1}>4월 GRAND OPEN 예정</div>
-                <div className={styles.grandOpenText3}>사전 청약 접수중</div>  
+                <div className={styles.grandOpenText3}>사전 접수중</div>  
               </div>
             </div>
           </div>
