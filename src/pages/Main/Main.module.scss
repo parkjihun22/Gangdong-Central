@@ -160,11 +160,12 @@
 @media (max-width: 900px) {
     .mainImageTextBox1 {
         position: absolute;
-        top: 32%;
-        left: 52%;
+        top: 25%;
+        left: 28%;
         transform: translate(-50%, -50%);
         text-align: center;
         color: white;
+        animation: fadeInUp 1.2s ease-out forwards; /* 애니메이션 적용 */
     }
 
     .smallText {
@@ -174,6 +175,7 @@
         font-size: 3vw;
         font-weight: 400;
         display: block;
+        animation: fadeInUp 1.4s ease-out forwards; /* 애니메이션 적용 */
     }
 
     .mediumText {
@@ -182,8 +184,8 @@
         color: #00294d;
         font-size: 3.5vw;
         font-weight: 900;
-
         display: block;
+        animation: fadeInUp 1.6s ease-out forwards; /* 애니메이션 적용 */
     }
 
     .largeText {
@@ -194,17 +196,9 @@
         -webkit-text-fill-color: transparent;
         font-size: 5vw;
         font-weight: 700;
-        margin-bottom: 2px; /* 텍스트 사이 간격 추가 */
+        margin-bottom: 2px;
         display: block;
-    }
-    
-    @keyframes blink {
-        0%, 100% {
-            opacity: 1;
-        }
-        50% {
-            opacity: 0.3;
-        }
+        animation: fadeInUp 1.8s ease-out forwards; /* 애니메이션 적용 */
     }
 
     .highlightBox {
@@ -215,25 +209,27 @@
         padding: 8px 12px;
         border: 3.5px solid rgb(205, 165, 70); /* 고급스러운 골드 테두리 */
         display: inline-block;
-        
+
         /* 텍스트 그라데이션 */
         background: linear-gradient(45deg, #FFD700, #C79700, #A67C00, #6B5600);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-    
-
-    
-    
+        animation: fadeInUp 2s ease-out forwards; /* 애니메이션 적용 */
     }
-
-
-      
-
-
-
-
-    
 }
+
+/* 슬라이드 업 애니메이션 */
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(50px); /* 텍스트가 아래에서 시작 */
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0); /* 자연스럽게 위로 올라옴 */
+        opacity: 1;
+    }
+}
+
 
 /* 텍스트 페이드 인 애니메이션 */
 @keyframes textFadeIn {
