@@ -22,19 +22,9 @@ const menuArray = [
 		subMenu: [
 			{ subTitle: "사업안내", subUrl: "/BusinessGuide/intro" },
 			{ subTitle: "분양일정", subUrl: "/BusinessGuide/plan" },
-			{ subTitle: "선착순계약 서류안내", subUrl: "/BusinessGuide/documents" },
+			{ subTitle: "계약 서류안내", subUrl: "/BusinessGuide/documents" },
 		],
-	},
-
-	{
-		title: "청약안내", // 추가된 메뉴SubscriptionGuide
-		subMenu: [	
-			{ subTitle: "인터넷청약", subUrl: "/SalesInfo/guide" }, // 하위 메뉴 1
-			{ subTitle: "체크포인트", subUrl: "/SalesInfo/SubscriptionGuide" }, // 하위 메뉴 2
-			{ subTitle: "모집공고안내", subUrl: "/SalesInfo/announcement" }, // 하위 메뉴 3
-			{ subTitle: "인지세납부안내", subUrl: "/SalesInfo/stampTax" }, // 하위 메뉴 4
-		],
-	},
+	},,
 
 	{
 		title: "입지환경",
@@ -55,20 +45,18 @@ const menuArray = [
 	{
 		title: "세대안내",
 		subMenu: [
-			{ subTitle: "59A", subUrl: "/FloorPlan/59A" },
-			{ subTitle: "59B", subUrl: "/FloorPlan/59B" },
-			{ subTitle: "84A", subUrl: "/FloorPlan/84A" },
-			{ subTitle: "84B", subUrl: "/FloorPlan/84B" },
-			{ subTitle: "119A", subUrl: "/FloorPlan/114A" },
-			{ subTitle: "119B", subUrl: "/FloorPlan/114B" },
+			{ subTitle: "51㎡ ", subUrl: "/FloorPlan/59A" },
+			{ subTitle: "59㎡", subUrl: "/FloorPlan/59B" },
+			{ subTitle: "84㎡", subUrl: "/FloorPlan/84A" },
+
 		],
 	},
 	{
 		title: "인테리어",
 		subMenu: [
-			{ subTitle: "84A", subUrl: "/Interior/59A" },
-			{ subTitle: "119A", subUrl: "/Interior/84A" },
-			{ subTitle: "119B", subUrl: "/Interior/84B" },
+			{ subTitle: "51㎡", subUrl: "/Interior/59A" },
+			{ subTitle: "59㎡", subUrl: "/Interior/84A" },
+			{ subTitle: "84㎡", subUrl: "/Interior/84B" },
 
 		],
 	},

@@ -7,10 +7,11 @@ import MenuBar from "../../components/MenuBar/MenuBar";
 import Footer from "../../components/Footer/Footer";
 import Bener from "../../components/Bener/Bener";
 import FixIcon from "../../components/FixIcon/FixIcon";
-import Ready from "../../components/Ready/Ready";
 import HelmetCOM from "../../components/HelmetCOM/HelmetCOM";
 import { Helmet } from "react-helmet-async";
-// import page1 from "../../assets/LocationEnvironment/LocationEnvironment2/page1.jpg";
+import page1 from "../../assets/LocationEnvironment/LocationEnvironment2/page1.jpg";
+import page2 from "../../assets/LocationEnvironment/LocationEnvironment2/page2.jpg";
+import page3 from "../../assets/LocationEnvironment/LocationEnvironment2/page3.jpg";
 
 const LocationEnvironment1 = () => {
 	const menuContents = [
@@ -75,9 +76,11 @@ const LocationEnvironment1 = () => {
 				<div>강동역 센트럴파크의 새로운 자부심으로 찾아옵니다.</div>
 			</div>
 
-			{/* <img src={page1} className={styles.image3} alt="강동역 센트럴파크 프리미엄-image1" /> */}
-			<Ready />
-
+			 <img src={page1} className={styles.image3} alt="강동역 센트럴파크 프리미엄-image1" />
+			 <img src={page2} className={styles.image3} alt="강동역 센트럴파크 프리미엄-image2" />
+			 <img src={page3} className={styles.image3} alt="강동역 센트럴파크 프리미엄-image3" />
+			 
+			
 			<Footer />
 		</div>
 	)

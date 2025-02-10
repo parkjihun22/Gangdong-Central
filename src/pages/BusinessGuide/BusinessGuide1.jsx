@@ -7,22 +7,18 @@ import MenuBar from "../../components/MenuBar/MenuBar";
 import Footer from "../../components/Footer/Footer";
 import Bener from "../../components/Bener/Bener";
 import FixIcon from "../../components/FixIcon/FixIcon";
-// import page1 from "../../assets/BusinessGuide/BusinessGuide1/page1.jpg";
-// import tableImage from "../../assets/BusinessGuide/BusinessGuide1/tableImage.jpg";
+import page1 from "../../assets/BusinessGuide/BusinessGuide1/page1.jpg";
+import tableImage from "../../assets/BusinessGuide/BusinessGuide1/tableImage.jpg";
 import { Helmet } from "react-helmet-async";
-import Ready from "../../components/Ready/Ready"; // Ready 컴포넌트 불러오기
 
 
-// const projectData = [
-// 	{ label: '사업명', value: '강동역 센트럴파크' },
-// 	{ label: '사업위치', value: '평택 브레인시티 일반산업단지 공동3BL' },
-// 	{ label: '대지면적', value: '106,050.4985㎡' },
-// 	{ label: '건축면적', value: '13,404.3638㎡' },
-// 	{ label: '연면적', value: '376,069.7623㎡' },
-// 	{ label: '용적률', value: '229.55%' },
-// 	{ label: '건축규모', value: '아파트 지하 최저 2층 ~ 지상 최고 35층 16개동' },
-// 	{ label: '세대수', value: '총 1,990세대 / 59㎡A, 59㎡B, 84㎡A, 84㎡B, 119㎡A, 114㎡B' },
-// ];
+
+const projectData = [
+{ label: '사업명', value: '강동역 센트럴파크' },
+{ label: '사업위치', value: '서울특별시 강동구 성내동 179번지 일원' },
+{ label: '건축규모', value: '지하 7층 ~ 지상 42층, 3개동' },
+{ label: '세대수', value: '총 388세대 / 51㎡, 59㎡, 84㎡' },
+];
 
 const BusinessGuide1 = () => {
 	const menuContents = [
@@ -87,9 +83,9 @@ const BusinessGuide1 = () => {
 				<div>강동역 센트럴파크의 새로운 자부심으로 찾아옵니다.</div>
 			</div>
 
-			{/* <img className={styles.img3} src={page1} alt="강동역 센트럴파크-image1"/> */}
+			<img className={styles.img3} src={page1} alt="강동역 센트럴파크-image1"/> 
 
-			{/* <div className={styles.tableContainer}>
+			<div className={styles.tableContainer}>
 				{!isMobile && <img className={styles.tableImg} src={tableImage} />}
 				<table className={styles.projectTable}>
 					<tbody>
@@ -101,9 +97,9 @@ const BusinessGuide1 = () => {
 						))}
 					</tbody>
 				</table>
-			</div> */}
+			</div> 
 
-			{/* <div className={styles.commonBox}>
+			<div className={styles.commonBox}>
 				<div className={styles.notice}>
 					※ 상기 이미지에 표현된 외관 디자인은 개략적인 이해를 돕기 위한 것으로, 상품특화 및 인허가 협의에 따라 입면 디자인, 경관조명, 출입구, 색채, 몰딩, 창호, 난간, 옥상 장식물, 줄눈, 각종 시설물의 디자인 및 형태, 마감사양, 조명 설치 위치 등이 실시공시 변경될 수 있습니다.
 				</div>
@@ -122,9 +118,9 @@ const BusinessGuide1 = () => {
 				<div className={styles.notice}>
 					※ 본 공사 시 옥상구조물 상부는 도장 시공을 하지 않습니다.
 				</div>
-			</div> */}
+			</div> 
 
-			<Ready />
+			
 
 			<Footer />
 		</div>

@@ -43,36 +43,36 @@ const section3Contents = [
   {
 		imgSrc: section3_Image1,
 		title: "PREMIUM 01",
-		text1: `1990세대 랜드마크 현대건설`,
-		text2: `강동을 대표할<br />
-			  대단지 브랜드 프리미엄`,
+		text1: `더블역세권의 가치`,
+		text2: `강동역(5호선) 도보 1분<br />
+			  천호역 도보 10분으로 더블역세권`,
 		link: "/BusinessGuide/intro",
 		linkText: "더 알아보기 >"
 	},
 	{
 		imgSrc: section3_Image2,
 		title: "PREMIUM 02",
-		text1: `여유로운 직주근접 단지`,
-		text2: `세계최대규모 삼성전자캠퍼스<br />
-			  송탄·칠괴 산단,KG모빌리티 등`,
+		text1: `강동 개발호재 중심지`,
+		text2: `강동의 핵심 개발중심지로<br />
+			      직주근접 프리미엄`,
 		link: "/LocationEnvironment/intro",
 		linkText: "더 알아보기 >"
 	},
 	{
 		imgSrc: section3_Image3,
 		title: "PREMIUM 03",
-		text1: `다 갖춘 고품격 커뮤니티`,
-		text2: `강동 내 최초 실내 수영장 및<br />
-			  독서실 골프클럽 등 대규모 커뮤니티`,
+		text1: `다 갖춘 생활인프라 프리미엄`,
+		text2: `이마트, 현대백화점,성내전통시장등 <br />
+			      생활 편의시설을 모두누릴 수 있는 프리미엄`,
 		link: "/LocationEnvironment/intro",
 		linkText: "더 알아보기 >"
 	},
 	{
 		imgSrc: section3_Image4,
 		title: "PREMIUM 04",
-		text1: `합리적 분양가 상한제`,
-		text2: `입주자의 경제적 부담을 낮춘<br />
-			  내 집 마련의 기회`,
+		text1: `착한 분양가`,
+		text2: `가장 합리적인 금액대로 서울권<br />
+			      내 집 마련의 기회`,
 		link: "/LocationEnvironment/primium",
 		linkText: "더 알아보기 >"
 	},
@@ -191,7 +191,7 @@ const Main = () => {
             <div className={styles.overlay}></div>
             <div className={styles.mainImageTextBox}>
               <div className={styles.mainImageTextSub}>
-               내일더 기대되는 강동의 중심 !<br /> <span className={styles.greyText}>한강조망과 초역세권 인프라</span>
+               내일더 기대되는 강동의 중심 !<br /><span className={styles.greyText}>한강조망과 초역세권 인프라</span>
               </div>
               <div className={styles.mainImageTitleBox}>
                 <div className={styles.mainImageText}>강동역 센트럴파크</div>
@@ -210,7 +210,7 @@ const Main = () => {
             <FixIcon type="absolute" />
           </div>
 
-          {/* <div className={styles.section}>
+           <div className={styles.section}>
             <div className={styles.section1}>
               <div className={styles.textBox}>
                 <div className={styles.text1}>Location</div>
@@ -219,8 +219,8 @@ const Main = () => {
                 </div>
                 <div className={styles.text3}>
                   - 강동 중심상업지구 매우인접 <br />
-                  - 첨단 아주대학교 종합병원 도보 5분 <br />
-                  - 평택 지제역 1호선, STR, KTX, GTX-A · C 확정으로 펜타역세권 <br />
+                  - 이마트, 현대백화점, 성내전통시장 등 생활편의 인프라 보장  <br />
+                  - 초역세권 입지로 5호선 강동역과 바로 연결되어 출퇴근 편리 <br />
                   - 모두를 누리는 강동역 센트럴파크
                 </div>
                 <div className={styles.text4}>
@@ -236,7 +236,7 @@ const Main = () => {
                 </Link>
               </div>
             </div>
-          </div> */}
+          </div> 
 
           <div className={styles.section}>
             <div className={styles.section8}>
@@ -280,7 +280,7 @@ const Main = () => {
             </div>
           </div>
 
-          {/* <div className={styles.section}>
+           <div className={styles.section}>
             <div className={styles.section3}>
               {section3Contents.map((section, index) => (
                 <div key={index} className={styles.box}>
@@ -294,9 +294,9 @@ const Main = () => {
                 </div>
               ))}
             </div>
-          </div> */}
+          </div> 
 
-          {/* <div className={styles.section}>
+           <div className={styles.section}>
             <div className={styles.section4}>
               <div className={styles.imageBox}>
                 <img src={section4_Image1} alt="강동역 센트럴파크 브랜드소개-image4" />
@@ -310,7 +310,7 @@ const Main = () => {
                 <Link to="/FloorPlan/84A" className={styles.text2}>더 알아보기 {">"}</Link>
               </div>
             </div>
-          </div>*/}
+          </div>*
           <div id="interestForm" className={styles.section}></div> 
 
           {/* 관심고객 등록 섹션 (PC 버전) */}
@@ -454,31 +454,28 @@ const Main = () => {
           <Header isChanged={isScroll} />
 
           <div className={styles.imageContainer}>
-            <img src={mobileImageMain} className={styles.mainImage} alt="강동역 센트럴파크 mobilemain-image1" />
-            <div className={styles.overlay}></div>
-            <div className={styles.mainImageTextBox1}>
-              <div className={styles.mainImageTextSub1}>
-              내일더 기대되는 강동의 중심 !<br />
-                <span className={styles.greyText1}>한강조망과 <br />초역세권 인프라</span><br />
-              </div>
-              <div className={styles.mainImageTitleBox1}>
+  <img src={mobileImageMain} className={styles.mainImage} alt="강동역 센트럴파크 mobilemain-image1" />
+  <div className={styles.overlay}></div>
+  <div className={styles.mainImageTextBox1}>
+    <div className={styles.mainImageTextSub1}>
+      <span className={styles.smallText}>강동역 센트럴파크가 가치를 제공하다</span>
+      <span className={styles.largeText}>강동역 바.로.연.결</span>
+      <span className={styles.largeText}>초역세권</span>
+      <span className={styles.mediumText}>역세권을 새롭게하다</span>
+    </div>
+  </div>
+</div>
 
-                <div className={styles.mainImageText1}>강동역 센트럴파크</div>
-                <div className={styles.grandOpenText1}>4월 GRAND OPEN 예정</div>
-                <div className={styles.grandOpenText3}>사전 접수중</div>  
-              </div>
-            </div>
-          </div>
 
-          {/* <div className={styles.container1}>
+           <div className={styles.container1}>
             <div className={styles.text1}>Location</div>
             <div className={styles.text2}>
               "방문예약을 하시면 신세계 상품권 100% 증정 "
             </div>
             <div className={styles.text3}>
               - 강동 중심상업지구 가장인접한 입지<br />
-              - 첨단 아주대학교 AI종합병원, 의료R＆D센터 도보 5분<br />
-              - 평택 지제역 KTX, GTX-A · C 확정 삼성전자 평택캠퍼스, 초등학교, 수변공원<br />
+              - 이마트, 현대백화점, 성내전통시장 등 생활편의 인프라 보장  <br />
+              - 초역세권 입지로 5호선 강동역과 바로 연결되어 출퇴근 편리 <br />
               - 모두를 누리는 반도체밸리 주거 타운의 완성
             </div>
             <div className={styles.text4}>
@@ -486,7 +483,7 @@ const Main = () => {
                 관심고객 등록하기 {">"}
               </a>
             </div>
-          </div> */}
+          </div>
 
            <div className={styles.container7}>
             <div className={styles.textBox}>
@@ -531,7 +528,7 @@ const Main = () => {
             </Link>
           </div>
 
-          {/* <div className={styles.container6}>
+           <div className={styles.container6}>
             {section3Contents.map((section, idx) => (
               <MobileSectionBox
                 key={idx}
@@ -542,7 +539,7 @@ const Main = () => {
                 subText2={section.text2}
               />
             ))}
-          </div> */}
+          </div> 
 
           {/* 관심고객 등록 섹션 (모바일 버전) */}
           <div className={styles.containerRegistration}>

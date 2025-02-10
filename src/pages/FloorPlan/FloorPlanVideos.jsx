@@ -20,8 +20,8 @@ const FloorPlanVideos= () => {
   // 동영상 파일 경로들 (Vimeo 비디오 URL)
   const videoFiles = [
     { id: 1, title: "입지환경 안내영상", src: "" },
-    { id: 2, title: "84타입 안내영상", src: "" },
-    { id: 3, title: "119타입 안내영상", src: "" }
+    { id: 2, title: "59 안내영상", src: "" },
+    { id: 3, title: "84 안내영상", src: "" }
   ];
 
   const handleTabClick = (id) => {

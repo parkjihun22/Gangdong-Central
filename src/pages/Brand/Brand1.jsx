@@ -9,7 +9,7 @@ import Bener from "../../components/Bener/Bener";
 import FixIcon from "../../components/FixIcon/FixIcon";
 import { Helmet } from "react-helmet-async";
 
-import page1 from "../../assets/Brand/intro/page1.jpg";
+//import page1 from "../../assets/Brand/intro/page1.jpg";
 import Ready from "../../components/Ready/Ready"; // Ready 컴포넌트 불러오기
 
 const Brand1 = () => {
@@ -76,10 +76,11 @@ const Brand1 = () => {
 
             <div className={`${styles.textBox} ${isTextVisible ? styles.active : ''}`}>
                 <div>생활의 모든 것을 한걸음에</div>
-                <div>센트럴파크, 강동의 중심에 서다</div>
-</div>
-
-            <img className={`${styles.image} ${isImageVisible ? styles.visible : ''}`} src={page1} alt="강동역 센트럴파크 brand-Image1" />
+                <div>강동의 중심에 들어올 센트럴파크 곧 찾아오겠습니다</div>
+            </div>
+            <Ready />
+            {/* <img className={`${styles.image} ${isImageVisible ? styles.visible : ''}`} src={page1} alt="강동역 센트럴파크 brand-Image1" /> */}
+            
 
             <Footer />
         </div>

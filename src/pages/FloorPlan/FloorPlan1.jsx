@@ -7,21 +7,18 @@ import MenuBar from "../../components/MenuBar/MenuBar";
 import Footer from "../../components/Footer/Footer";
 import Bener from "../../components/Bener/Bener";
 import FixIcon from "../../components/FixIcon/FixIcon";
-import Ready from "../../components/Ready/Ready";
+
 import HelmetCOM from "../../components/HelmetCOM/HelmetCOM";
 import { Helmet } from "react-helmet-async";
 
-// import page1 from "../../assets/FloorPlan/FloorPlan1/page1.jpg"
+import page1 from "../../assets/FloorPlan/FloorPlan1/page1.jpg"
 
 const FloorPlan1 = () => {
 	const menuContents = [
-		{ title: "59A", url: "/FloorPlan/59A" },
-		{ title: "59B", url: "/FloorPlan/59B" },
-		{ title: "84A", url: "/FloorPlan/84A" },
-		{ title: "84B", url: "/FloorPlan/84B" },
-		{ title: "119A", url: "/FloorPlan/114A" },
-		{ title: "119B", url: "/FloorPlan/114B" },
-    { title: "세대안내영상", url: "/FloorPlan/videos" }  // 세대안내영상 링크
+		{ title: "51㎡", url: "/FloorPlan/59A" },
+		{ title: "59㎡", url: "/FloorPlan/59B" },
+		{ title: "84㎡", url: "/FloorPlan/84A" },
+
 	
 	];
 
@@ -87,14 +84,14 @@ const FloorPlan1 = () => {
 			</div>
 
 			{/* 이미지에 애니메이션 효과 추가 */}
-			{/* <img
+			 <img
 				className={`${styles.image2} ${isImage2Loaded ? styles.showImage2 : ''}`}
 				src={page1}
 				alt="강동역 센트럴파크 59타입의평면안내-image1"
 				onLoad={handleImageLoad}  // 이미지 로드 후 애니메이션 실행
-			/> */}
+			/>
 
-			<Ready />
+
 
 			<div className={styles.commonBox2}>
 				<div className={styles.notice}>

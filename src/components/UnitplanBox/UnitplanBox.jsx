@@ -1,31 +1,23 @@
 import React, { useEffect, useState } from "react";
 import { AiOutlineRight, AiOutlineLeft } from "react-icons/ai";
 import styles from "./UnitplanBox.module.scss";
-// import room59A from "../../assets/UnitplanBox/59A.png";
-// import room59B from "../../assets/UnitplanBox/59B.png";
-// import room84A from "../../assets/UnitplanBox/84A.png";
-// import room84B from "../../assets/UnitplanBox/84B.png";
-// import room119A from "../../assets/UnitplanBox/119A.png";
-// import room119B from "../../assets/UnitplanBox/119B.png";
+import page1 from "../../assets/UnitplanBox/page1.jpg";
+import page2 from "../../assets/UnitplanBox/page2.jpg";
+import page3 from "../../assets/UnitplanBox/page3.jpg";
+
 import { useMediaQuery } from "react-responsive";
-import Ready from "../../components/Ready/Ready"; // Ready 컴포넌트 불러오기
 
 const contents = [
-    { type: '59A㎡', src: null },
-    { type: '59B㎡', src: null },
-    { type: '84A㎡', src: null },
-    { type: '84B㎡', src: null },
-    { type: '119A㎡', src: null },
-    { type: '119B㎡', src: null },
-
-
+    { type: '51㎡', src: page1 },
+    { type: '59㎡', src: page2 },
+    { type: '84㎡', src: page3 },
 
 ]
 
 const UnitplanBox = () => {
     const [istype, setIsType] = useState(contents[0]); // 기본값은 첫 번째 객체
     const [isIdx, setIdx] = useState(0);
-    const [isImage, setIsImage] = useState(null);
+    const [isImage, setIsImage] = useState(page1);
     const [isLeft, setIsLeft] = useState(false); // 처음에는 왼쪽으로 갈 수 없음
     const [isRight, setIsRight] = useState(true); // 처음에는 오른쪽으로 갈 수 있음
     const [animationClass, setAnimationClass] = useState(''); // 애니메이션 클래스 상태
@@ -87,14 +79,7 @@ const UnitplanBox = () => {
                     color={isLeft ? '#d1af73' : '#eedec3'} // 조건에 맞게 색상 변경
                     onClick={isLeft ? leftArray : undefined} // isLeft가 true일 때만 클릭 가능
                 />
-                {/* 📌 이미지가 없어도 테두리가 유지되도록 감싸는 div 추가 */}
-                <div className={styles.imageWrapper}>
-                    {isImage ? (
-                        <img className={`${styles.typeImg} ${animationClass}`} src={isImage} alt={istype.type} />
-                    ) : (
-                        <Ready />
-                    )}
-                </div>
+                <img className={`${styles.typeImg} ${animationClass}`} src={isImage} alt={istype.type} />
                 <AiOutlineRight
                     size={!isMobile? 150 : 60}
                     color={isRight ? '#d1af73' : '#eedec3'} // 조건에 맞게 색상 변경
