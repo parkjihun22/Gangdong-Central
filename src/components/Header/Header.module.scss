@@ -15,7 +15,7 @@
     /* gif 배너 높이 + 안전 영역(top) */
     height: calc(var(--gif-banner-height) + env(safe-area-inset-top, 0px));
     text-align: center;
-    background-color: #2d3c49;
+    background-color: #333;
     position: fixed;
     top: 0;
     left: 0;
