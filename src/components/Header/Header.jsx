@@ -1,13 +1,18 @@
-import React, { useState, useEffect, useCallback } from "react";
-import { useMediaQuery } from 'react-responsive';
+import React, { useState } from "react";
+import { useMediaQuery } from "react-responsive";
 import { Link } from "react-router-dom";
 import { IoCall, IoCloseSharp } from "react-icons/io5";
 import { AiOutlineMenu } from "react-icons/ai";
 
 import styles from "./Header.module.scss";
 import SlideMenu from "../../components/SlideMenu/SlideMenu";
-import logoImageHover from "../../assets/logo/mainlogo.png";
-import logoImage from "../../assets/logo/mainlogowhite.jpg";
+import logoImage from "../../assets/logo/mainlogo.png";
+import bannerGif from "../../assets/logo/uptool.gif";
+import mainlogowhite from "../../assets/logo/mainlogowhite.jpg";
+
+// 관심고객 팝업 컴포넌트 import
+import InterestPopup from "../../components/InterestPopup/InterestPopup";
+
 
 const menuArray = [
 	{
@@ -63,142 +68,153 @@ const menuArray = [
 
 ];
 
-const Header = ({ isChanged }) => {
-	const [isChange, setIsChange] = useState(isChanged);
-	const [isMenu, setIsMenu] = useState(false);
+const Header = () => {
+	const [hoveredMenu, setHoveredMenu] = useState(null);
+	const [hoveredMenuRect, setHoveredMenuRect] = useState(null);
 	const [isMobileMenu, setIsMobileMenu] = useState(false);
-	const isMobile = useMediaQuery({ query: '(max-width: 900px)' });
-
-	useEffect(() => {
-		if (!isMobile) setIsChange(!isChanged);
-	}, [isChanged, isMobile]);
-
-	const handleMouseEnter = () => {
-		setIsMenu(true);
+	const isMobile = useMediaQuery({ query: "(max-width: 900px)" });
+  
+	// 관심고객 팝업을 위한 상태와 등록폼 상태 (PC 버전 공통 적용)
+	const [isInterestPopupOpen, setIsInterestPopupOpen] = useState(false);
+	const [registration, setRegistration] = useState({
+	  name: "",
+	  phone: "",
+	  email: "",
+	  visitDate: "",
+	});
+	const handleInputChange = (e) => {
+	  const { name, value } = e.target;
+	  setRegistration((prev) => ({ ...prev, [name]: value }));
 	};
-
-	const handleMouseLeave = () => {
-		setIsMenu(false);
-	};
-
-	const closeMobileMenu = useCallback(() => {
-		setIsMobileMenu(false);
-	}, []);
-
-	useEffect(() => {
-		const handleScroll = () => {
-			if (isMobileMenu) {
-				closeMobileMenu();
-			}
-		};
-
-		const handleClickOutside = (event) => {
-			if (isMobileMenu && !event.target.closest(`.${styles.mobileHeader}`)) {
-				closeMobileMenu();
-			}
-		};
-
-		window.addEventListener('scroll', handleScroll);
-		document.addEventListener('mousedown', handleClickOutside);
-
-		return () => {
-			window.removeEventListener('scroll', handleScroll);
-			document.removeEventListener('mousedown', handleClickOutside);
-		};
-	}, [isMobileMenu, closeMobileMenu]);
-
-	return (
+  
+	// 모바일 버전 처리 (슬라이드메뉴 사용)
+	if (isMobile) {
+	  return (
 		<>
-			{!isMobile ? (
-				<>
-					{!isMenu ? (
-						<header
-							className={isChange ? styles.containerFirst : styles.container}
-							onMouseEnter={handleMouseEnter}
-							onMouseLeave={handleMouseLeave}>
-
-							<Link to='/'>
-								<img src={isChange ? logoImageHover : logoImage} alt="대전 하늘채 스카이앤3차-mainLogo-image" />
-							</Link>
-
-							<div className={styles.itemBox}>
-								<a href="https://naver.me/G58kVeiB" className={isChange ? styles.linkItem : styles.scrolledLinkItem}>
-									모바일 상담예약
-								</a>
-								{menuArray.map((menu, idx) => (
-									<Link key={idx} to={menu.subMenu[0].subUrl} className={isChange ? styles.item : styles.scrolledItem}>
-										{menu.title}
-									</Link>
-								))}
-							</div>
-
-							<a href="https://naver.me/G58kVeiB" className={isChange ? styles.phoneNumber : styles.scrolledPhoneNumber}>
-								<IoCall size={20} /> 1533-8848
-							</a>
-						</header>
-					) : (
-						<header
-							className={styles.secondContainer}
-							onMouseEnter={handleMouseEnter}
-							onMouseLeave={handleMouseLeave}>
-
-							<Link to='/'>
-								<img src={logoImage} alt="대전하늘채스카이앤3차 -mainLogo-image" />
-							</Link>
-
-							<div className={isChange ? styles.title : styles.scrolledTitle}>
-								대전 하늘채 스카이앤3차
-							</div>
-
-							<div className={styles.itemBox}>
-								<a href="https://naver.me/G58kVeiB" className={styles.linkItem}>
-									모바일 상담예약
-								</a>
-								{menuArray.map((menu, idx) => (
-									<div key={idx} className={styles.detailItemBox}>
-										<Link to={menu.subMenu[0].subUrl} className={styles.item}>
-											{menu.title}
-										</Link>
-
-										<div className={styles.secondItemBox}>
-											{menu.subMenu.map((submenu, subIdx) => (
-												<Link key={subIdx} to={submenu.subUrl} className={styles.subitem}>
-													{submenu.subTitle}
-												</Link>
-											))}
-										</div>
-									</div>
-								))}
-							</div>
-
-							<a href="https://naver.me/G58kVeiB" className={styles.phoneNumber}>
-								<IoCall size={20} /> 1533-8848
-							</a>
-						</header>
-					)}
-				</>
-			) : (
-				<div className={styles.mobileHeader}>
-					<div onClick={() => setIsMobileMenu(!isMobileMenu)}>
-						{!isMobileMenu ?
-							<AiOutlineMenu className={styles.icon} size={25} color="#2d3c49" />
-							:
-							<IoCloseSharp className={styles.icon} size={25} color="#2d3c49" />
-						}
-					</div>
-					{isMobileMenu && <SlideMenu contents={menuArray} onClose={closeMobileMenu} />}
-
-					<Link to='/'>
-						<img src={logoImage} alt="jungheung-class-mainLogo-image" className={styles.logo} />
-					</Link>
-
-					<a href={'tel:1533-8848'}>
-						<IoCall className={styles.icon} size={25} color="#2d3c49" />
-					</a>
-				</div>
+		  <div className={styles.gifBanner}>
+			<img src={bannerGif} alt="Uptool Banner" />
+		  </div>
+		  <div className={styles.mobileHeader}>
+			<div onClick={() => setIsMobileMenu(!isMobileMenu)}>
+			  {!isMobileMenu ? (
+				<AiOutlineMenu className={styles.icon} size={25} color="#095052" />
+			  ) : (
+				<IoCloseSharp className={styles.icon} size={25} color="#095052" />
+			  )}
+			</div>
+			{isMobileMenu && (
+			  <SlideMenu
+				contents={menuArray}
+				onClose={() => setIsMobileMenu(false)}
+				// 모바일 슬라이드메뉴에서도 예약 팝업 열기를 위한 함수를 전달
+				onReservationClick={() => setIsInterestPopupOpen(true)}
+			  />
 			)}
+			<Link to="/">
+			  <img src={mainlogowhite} alt="Logo" className={styles.logo} />
+			</Link>
+			{/* 모바일에서는 기존 전화 연결 a 태그 유지 */}
+			<a href="tel:1533-8848">
+			  <IoCall className={styles.icon} size={25} color="#095052" />
+			</a>
+		  </div>
+		  {/* 모바일에서도 팝업을 렌더링 (최상위에서) */}
+		  {isInterestPopupOpen && (
+			<InterestPopup
+			  onClose={() => setIsInterestPopupOpen(false)}
+			  registration={registration}
+			  handleInputChange={handleInputChange}
+			/>
+		  )}
 		</>
+	  );
+	}
+  
+	// PC 버전 처리
+	const handleNavItemMouseEnter = (idx, e) => {
+	  const rect = e.currentTarget.getBoundingClientRect();
+	  setHoveredMenu(idx);
+	  setHoveredMenuRect(rect);
+	};
+  
+	const handleMouseLeave = () => {
+	  setHoveredMenu(null);
+	  setHoveredMenuRect(null);
+	};
+  
+	return (
+	  <div
+		className={`${styles.headerWrapper} ${
+		  hoveredMenu !== null ? styles.dropdownOpen : ""
+		}`}
+		onMouseLeave={handleMouseLeave}
+	  >
+		{/* 상단 GIF 배너 */}
+		<div className={styles.gifBanner}>
+		  <img src={bannerGif} alt="Uptool Banner" />
+		</div>
+		<header className={styles.headerInitial}>
+		  <Link to="/">
+			<img src={logoImage} alt="Logo" className={styles.logo} />
+		  </Link>
+		  <div className={styles.itemBox}>
+			{/* "모바일 상담예약" 링크를 기존 스타일(a 태그)로 유지하고, 클릭 시 팝업을 열도록 수정 */}
+			<a
+			  href="#"
+			  className={styles.consultLink}
+			  onClick={(e) => {
+				e.preventDefault();
+				setIsInterestPopupOpen(true);
+			  }}
+			>
+			  모바일 상담예약
+			</a>
+			{menuArray.map((menu, idx) => (
+			  <div
+				key={idx}
+				className={styles.navItem}
+				onMouseEnter={(e) => handleNavItemMouseEnter(idx, e)}
+			  >
+				<Link to={menu.subMenu[0].subUrl} className={styles.navLink}>
+				  {menu.title}
+				</Link>
+			  </div>
+			))}
+		  </div>
+		  {/* 전화번호 영역 – 원래 a 태그 대신 버튼 형태였으나, 기본 스타일링(배경 없음 등)을 위해 그대로 적용 */}
+		  <button
+			className={styles.phoneNumber}
+			onClick={() => setIsInterestPopupOpen(true)}
+			type="button"
+			style={{ background: "none", border: "none", cursor: "pointer" }}
+		  >
+			<IoCall size={20} /> 1533-8848
+		  </button>
+		</header>
+		{hoveredMenu !== null && hoveredMenuRect && (
+		  <div className={styles.dropdownContainer}>
+			<div
+			  className={styles.dropdownContent}
+			  style={{ marginLeft: hoveredMenuRect.left }}
+			>
+			  {menuArray[hoveredMenu].subMenu.map((submenu, subIdx) => (
+				<Link key={subIdx} to={submenu.subUrl} className={styles.dropdownItem}>
+				  {submenu.subTitle}
+				</Link>
+			  ))}
+			</div>
+		  </div>
+		)}
+		{/* PC 버전에서도 최상위에서 팝업을 렌더링 */}
+		{isInterestPopupOpen && (
+		  <InterestPopup
+			onClose={() => setIsInterestPopupOpen(false)}
+			registration={registration}
+			handleInputChange={handleInputChange}
+		  />
+		)}
+	  </div>
 	);
-};
-
-export default Header;
+  };
+  
+  export default Header;

@@ -12,6 +12,7 @@ import UnitplanBox from "../../components/UnitplanBox/UnitplanBox";
 import MobilePopup from "../../components/MobilePopup/MobilePopup";
 import Popup from "../../components/Popup/Popup";
 import MobileSectionBox from "../../components/MobileSectionBox/MobileSectionBox";
+import InterestPopup from "../../components/InterestPopup/InterestPopup";
 
 import mainImage from "../../assets/Main/Main1.jpg";
 import section1_Image1 from "../../assets/Main/section1-img1.jpg";
@@ -41,41 +42,41 @@ import subpinkimg from "../../assets/Main/subpinkimg.jpg";
 
 const section3Contents = [
   {
-		imgSrc: section3_Image1,
-		title: "PREMIUM 01",
-		text1: `더블역세권의 가치`,
-		text2: `강동역(5호선) 도보 1분<br />
+    imgSrc: section3_Image1,
+    title: "PREMIUM 01",
+    text1: `더블역세권의 가치`,
+    text2: `강동역(5호선) 도보 1분<br />
 			  천호역 도보 10분으로 더블역세권`,
-		link: "/BusinessGuide/intro",
-		linkText: "더 알아보기 >"
-	},
-	{
-		imgSrc: section3_Image2,
-		title: "PREMIUM 02",
-		text1: `강동 개발호재 중심지`,
-		text2: `강동의 핵심 개발중심지로<br />
+    link: "/BusinessGuide/intro",
+    linkText: "더 알아보기 >",
+  },
+  {
+    imgSrc: section3_Image2,
+    title: "PREMIUM 02",
+    text1: `강동 개발호재 중심지`,
+    text2: `강동의 핵심 개발중심지로<br />
 			      직주근접 프리미엄`,
-		link: "/LocationEnvironment/intro",
-		linkText: "더 알아보기 >"
-	},
-	{
-		imgSrc: section3_Image3,
-		title: "PREMIUM 03",
-		text1: `다 갖춘 생활인프라 프리미엄`,
-		text2: `이마트, 현대백화점,성내전통시장등 <br />
+    link: "/LocationEnvironment/intro",
+    linkText: "더 알아보기 >",
+  },
+  {
+    imgSrc: section3_Image3,
+    title: "PREMIUM 03",
+    text1: `다 갖춘 생활인프라 프리미엄`,
+    text2: `이마트, 현대백화점,성내전통시장등 <br />
 			      생활 편의시설을 모두누릴 수 있는 프리미엄`,
-		link: "/LocationEnvironment/intro",
-		linkText: "더 알아보기 >"
-	},
-	{
-		imgSrc: section3_Image4,
-		title: "PREMIUM 04",
-		text1: `착한 분양가`,
-		text2: `가장 합리적인 금액대로 서울권<br />
+    link: "/LocationEnvironment/intro",
+    linkText: "더 알아보기 >",
+  },
+  {
+    imgSrc: section3_Image4,
+    title: "PREMIUM 04",
+    text1: `착한 분양가`,
+    text2: `가장 합리적인 금액대로 서울권<br />
 			      내 집 마련의 기회`,
-		link: "/LocationEnvironment/primium",
-		linkText: "더 알아보기 >"
-	},
+    link: "/LocationEnvironment/primium",
+    linkText: "더 알아보기 >",
+  },
 ];
 
 const Main = () => {
@@ -87,6 +88,7 @@ const Main = () => {
   const [isOpenPopup2, setIsOpenPopup2] = useState(true);
   const [isOpenPopup3, setIsOpenPopup3] = useState(true);
   const [isOpenPopup4, setIsOpenPopup4] = useState(true);
+  const [isInterestPopupOpen, setIsInterestPopupOpen] = useState(false); // 방문예약 팝업 상태
   const isMobile = useMediaQuery({ query: "(max-width: 900px)" });
 
   // 관심고객 등록 폼 상태 관리 (방문일자 필드 포함)
@@ -94,7 +96,7 @@ const Main = () => {
     name: "",
     phone: "",
     email: "",
-    visitDate: ""
+    visitDate: "",
   });
 
   const handleInputChange = (e) => {
@@ -185,32 +187,42 @@ const Main = () => {
               numbering={3}
             />
           )}
-
           <div className={styles.imageContainer}>
-            <img src={mainImage} className={styles.mainImage} alt="강동역 센트럴파크-mainimage1" />
+            <img
+              src={mainImage}
+              className={styles.mainImage}
+              alt="강동역 센트럴파크-mainimage1"
+            />
             <div className={styles.overlay}></div>
             <div className={styles.mainImageTextBox}>
               <div className={styles.mainImageTextSub}>
-               내일더 기대되는 강동의 중심 !<br /><span className={styles.greyText}>한강조망과 초역세권 인프라</span>
+                내일더 기대되는 강동의 중심 !<br />
+                <span className={styles.greyText}>
+                  한강조망과 초역세권 인프라
+                </span>
               </div>
               <div className={styles.mainImageTitleBox}>
                 <div className={styles.mainImageText}>강동역 센트럴파크</div>
                 <div className={styles.grandOpenText}>4월 GRAND OPEN 예정</div>
-                <div className={styles.grandOpenText1}>사전 접수중</div> 
+                <div className={styles.grandOpenText1}>사전 접수중</div>
               </div>
+              {/* 기존 관심고객 등록 링크 대신 방문예약 버튼 클릭 시 팝업 오픈 */}
               <div>
-              <a href="#interestForm">
-              <img 
-              src={subpinkimg} 
-              className={styles.subPinkImg} 
-              alt="강동역 센트럴파크 관심고객등록" /></a>
-            </div>
-
+                <button
+                  onClick={() => setIsInterestPopupOpen(true)}
+                  className={styles.subPinkBtn}
+                >
+                  <img
+                    src={subpinkimg}
+                    className={styles.subPinkImg}
+                    alt="브레인시티푸르지오 관심고객등록"
+                  />
+                </button>
+              </div>
             </div>
             <FixIcon type="absolute" />
           </div>
-
-           <div className={styles.section}>
+          <div className={styles.section}>
             <div className={styles.section1}>
               <div className={styles.textBox}>
                 <div className={styles.text1}>Location</div>
@@ -219,44 +231,57 @@ const Main = () => {
                 </div>
                 <div className={styles.text3}>
                   - 강동 중심상업지구 매우인접 <br />
-                  - 이마트, 현대백화점, 성내전통시장 등 생활편의 인프라 보장  <br />
-                  - 초역세권 입지로 5호선 강동역과 바로 연결되어 출퇴근 편리 <br />
-                  - 모두를 누리는 강동역 센트럴파크
+                  - 이마트, 현대백화점, 성내전통시장 등 생활편의 인프라 보장{" "}
+                  <br />
+                  - 초역세권 입지로 5호선 강동역과 바로 연결되어 출퇴근 편리{" "}
+                  <br />- 모두를 누리는 강동역 센트럴파크
                 </div>
                 <div className={styles.text4}>
-                  <a href="https://naver.me/G58kVeiB" target="_black">
+                  <a
+                    href="#"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setIsInterestPopupOpen(true);
+                    }}
+                  >
                     관심고객 등록하기 {">"}
                   </a>
                 </div>
               </div>
               <div className={styles.menuBox}>
-                <img src={section1_Image1} alt="강동역 센트럴파크 브랜드소개-image2" />
+                <img
+                  src={section1_Image1}
+                  alt="강동역 센트럴파크 브랜드소개-image2"
+                />
                 <Link to="/Brand/video" className={styles.btn}>
                   브랜드 소개 {">"}
                 </Link>
               </div>
             </div>
-          </div> 
-
+          </div>
           <div className={styles.section}>
             <div className={styles.section8}>
               <div className={styles.textBox}>
                 <div className={styles.title}>
-                  소수만 누릴 수 있는<br />
+                  소수만 누릴 수 있는
+                  <br />
                   <span>최고의 브랜드 아파트 강동역 센트럴파크</span>
                 </div>
                 <div className={styles.subTitle}>
                   <div className={styles.textLine}></div>
                   <div className={styles.subText}>
-                    찬란한 비전에 완벽한 주거가치까지 더해<br />
+                    찬란한 비전에 완벽한 주거가치까지 더해
+                    <br />
                     강동역 센트럴파크가 함께합니다
                   </div>
                 </div>
               </div>
-              <img src={section8Img3} alt="강동역 센트럴파크 입지환경소개-image2" />
+              <img
+                src={section8Img3}
+                alt="강동역 센트럴파크 입지환경소개-image2"
+              />
             </div>
-          </div> 
-
+          </div>
           <div className={styles.section}>
             <div className={styles.section2}>
               <div className={styles.textBox}>
@@ -264,55 +289,76 @@ const Main = () => {
                   완벽한 생활에서 준비된 미래까지
                 </div>
                 <div className={`${styles.text2} fadeUpRepeat`}>
-                  기대한 모든 프리미엄이<br />강동역 센트럴파크에서 펼쳐집니다
+                  기대한 모든 프리미엄이
+                  <br />
+                  강동역 센트럴파크에서 펼쳐집니다
                 </div>
                 <div className={`${styles.text3} fadeUpRepeat`}>
                   SPECIAL PLAN
                 </div>
                 <div className={`${styles.text4} fadeUpRepeat`}>
-                  살수록 자부심이 차원이 다른<br />프리미엄 주거라이프를 실현합니다
+                  살수록 자부심이 차원이 다른
+                  <br />
+                  프리미엄 주거라이프를 실현합니다
                 </div>
                 <div className={`${styles.text5} fadeUpRepeat`}>
-                  주거의 품격과 가치를 높이는 <span>특화설계</span><br />안전한 이동을 위한 세심한 <span>단지설계</span><br />편리한 생활을 위한 최적의 <span>공간설계</span>
+                  주거의 품격과 가치를 높이는 <span>특화설계</span>
+                  <br />
+                  안전한 이동을 위한 세심한 <span>단지설계</span>
+                  <br />
+                  편리한 생활을 위한 최적의 <span>공간설계</span>
                 </div>
               </div>
-              <img src={section2_Image1} alt="강동역 센트럴파크아파트 조감도-image3" />
+              <img
+                src={section2_Image1}
+                alt="강동역 센트럴파크아파트 조감도-image3"
+              />
             </div>
           </div>
-
-           <div className={styles.section}>
+          <div className={styles.section}>
             <div className={styles.section3}>
               {section3Contents.map((section, index) => (
                 <div key={index} className={styles.box}>
                   <img src={section.imgSrc} alt={section.title} />
                   <div className={styles.boxTitle}>{section.title}</div>
-                  <div className={styles.boxText1} dangerouslySetInnerHTML={{ __html: section.text1 }} />
-                  <div className={styles.boxText2} dangerouslySetInnerHTML={{ __html: section.text2 }} />
+                  <div
+                    className={styles.boxText1}
+                    dangerouslySetInnerHTML={{ __html: section.text1 }}
+                  />
+                  <div
+                    className={styles.boxText2}
+                    dangerouslySetInnerHTML={{ __html: section.text2 }}
+                  />
                   <Link to={section.link} className={styles.boxText3}>
                     {section.linkText}
                   </Link>
                 </div>
               ))}
             </div>
-          </div> 
-
-           <div className={styles.section}>
+          </div>
+          <div className={styles.section}>
             <div className={styles.section4}>
               <div className={styles.imageBox}>
-                <img src={section4_Image1} alt="강동역 센트럴파크 브랜드소개-image4" />
+                <img
+                  src={section4_Image1}
+                  alt="강동역 센트럴파크 브랜드소개-image4"
+                />
                 <div className={styles.text1}>강동역 센트럴파크</div>
                 <div className={styles.text2}>THE NATURAL NOBILITY</div>
-                <div className={styles.text3}>당신의 삶, 그 고귀함이 계속되길</div>
+                <div className={styles.text3}>
+                  당신의 삶, 그 고귀함이 계속되길
+                </div>
               </div>
               <div className={styles.textBox}>
                 <div className={styles.text1}>UNITPLAN</div>
                 <UnitplanBox />
-                <Link to="/FloorPlan/84A" className={styles.text2}>더 알아보기 {">"}</Link>
+                <Link to="/FloorPlan/84A" className={styles.text2}>
+                  더 알아보기 {">"}
+                </Link>
               </div>
             </div>
-          </div>*
-          <div id="interestForm" className={styles.section}></div> 
-
+          </div>
+          *<div id="interestForm" className={styles.section}></div>
           {/* 관심고객 등록 섹션 (PC 버전) */}
           <div className={styles.section}>
             <div className={styles.registrationContainer}>
@@ -320,14 +366,14 @@ const Main = () => {
               <div className={styles.registrationInfo}>
                 <div className={styles.text1}>
                   <p>
-                  강동역 센트럴파크
+                    강동역 센트럴파크
                     <br />
                     주변이 궁금하시나요?
                   </p>
                 </div>
                 <div className={styles.text2}>
                   <p>
-                  강동역 센트럴파크
+                    강동역 센트럴파크
                     <br />
                     현장 정보 및 견본주택 정보를 보실 수 있습니다.
                   </p>
@@ -346,10 +392,11 @@ const Main = () => {
               </div>
               {/* 오른쪽 관심고객 등록 폼 영역 */}
               <div className={styles.registrationSection}>
-                <div className={styles.registrationHeader}>강동역 센트럴파크 </div>
+                <div className={styles.registrationHeader}>
+                  강동역 센트럴파크{" "}
+                </div>
                 <div className={styles.registrationDescription}>
                   관심고객등록
-                  
                 </div>
                 {/* Formspree 연동: onSubmit 제거, action, method 추가 */}
                 <form
@@ -357,7 +404,9 @@ const Main = () => {
                   action="https://formspree.io/f/xnnjvebv"
                   method="POST"
                 >
-                  <label htmlFor="name">이름<span style={{ color: 'red' }}>*</span></label>
+                  <label htmlFor="name">
+                    이름<span style={{ color: "red" }}>*</span>
+                  </label>
                   <input
                     id="name"
                     type="text"
@@ -367,7 +416,9 @@ const Main = () => {
                     onChange={handleInputChange}
                     required
                   />
-                  <label htmlFor="phonenumber">연락처<span style={{ color: 'red' }}>*</span></label>
+                  <label htmlFor="phonenumber">
+                    연락처<span style={{ color: "red" }}>*</span>
+                  </label>
                   <input
                     id="Phonenumber"
                     type="tel"
@@ -378,9 +429,11 @@ const Main = () => {
                     required
                   />
                   {/* 날짜 선택 입력란에 라벨 추가 */}
-    
+
                   <div className={styles.registrationForm}>
-                  <label htmlFor="visitdata">방문일자 <span style={{ color: 'red' }}>*</span></label>
+                    <label htmlFor="visitdata">
+                      방문일자 <span style={{ color: "red" }}>*</span>
+                    </label>
                     <input
                       id="visitDate"
                       type="date"
@@ -395,7 +448,6 @@ const Main = () => {
               </div>
             </div>
           </div>
-
           {/* <div className={styles.section}>
             <div className={styles.section9}>
               <div className={styles.textBox}>
@@ -414,10 +466,17 @@ const Main = () => {
               <img src={map1} alt="강동역 센트럴파크 오시는길안내-image1" />
             </div>
           </div> */}
-
           <div className={styles.section5}>
             <Footer />
           </div>
+          {/* 방문예약 팝업 (PC) */}
+          {isInterestPopupOpen && (
+            <InterestPopup
+              onClose={() => setIsInterestPopupOpen(false)}
+              registration={registration}
+              handleInputChange={handleInputChange}
+            />
+          )}
         </>
       ) : (
         // 모바일 버전
@@ -454,53 +513,72 @@ const Main = () => {
           <Header isChanged={isScroll} />
 
           <div className={styles.imageContainer}>
-  <img src={mobileImageMain} className={styles.mainImage} alt="강동역 센트럴파크 mobilemain-image1" />
-  <div className={styles.overlay}></div>
-  <div className={styles.mainImageTextBox1}>
-    <div className={styles.mainImageTextSub1}>
-      <span className={styles.smallText}>강동역 센트럴파크가 가치를 제공하다</span>
-      <span className={styles.largeText}>강동역 바.로.연.결</span>
-      <span className={styles.largeText}>초역세권</span>
-      <span className={styles.mediumText}>역세권을 새롭게하다</span>
-    </div>
-  </div>
-</div>
+            <img
+              src={mobileImageMain}
+              className={styles.mainImage}
+              alt="강동역 센트럴파크 mobilemain-image1"
+            />
+            <div className={styles.overlay}></div>
+            <div className={styles.mainImageTextBox1}>
+              <div className={styles.mainImageTextSub1}>
+                <span className={styles.smallText}>
+                  강동역 센트럴파크가 가치를 제공하다
+                </span>
+                <span className={styles.largeText}>강동역 바.로.연.결</span>
+                <span className={styles.largeText}>초역세권</span>
+                <span className={styles.mediumText}>역세권을 새롭게하다</span>
+              </div>
+            </div>
+          </div>
 
-
-           <div className={styles.container1}>
+          <div className={styles.container1}>
             <div className={styles.text1}>Location</div>
             <div className={styles.text2}>
               "방문예약을 하시면 신세계 상품권 100% 증정 "
             </div>
             <div className={styles.text3}>
-              - 강동 중심상업지구 가장인접한 입지<br />
-              - 이마트, 현대백화점, 성내전통시장 등 생활편의 인프라 보장  <br />
-              - 초역세권 입지로 5호선 강동역과 바로 연결되어 출퇴근 편리 <br />
-              - 모두를 누리는 반도체밸리 주거 타운의 완성
+              - 강동 중심상업지구 가장인접한 입지
+              <br />
+              - 이마트, 현대백화점, 성내전통시장 등 생활편의 인프라 보장 <br />
+              - 초역세권 입지로 5호선 강동역과 바로 연결되어 출퇴근 편리 <br />-
+              모두를 누리는 반도체밸리 주거 타운의 완성
             </div>
             <div className={styles.text4}>
-              <a href="https://naver.me/G58kVeiB" target="_black">
+              {/* 외부 링크 대신 방문예약 클릭 시 팝업 호출 */}
+              <a
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  setIsInterestPopupOpen(true);
+                }}
+                className={styles.popupBtn}
+              >
                 관심고객 등록하기 {">"}
               </a>
             </div>
           </div>
 
-           <div className={styles.container7}>
+          <div className={styles.container7}>
             <div className={styles.textBox}>
               <div className={styles.title}>
-                강동의 중심으로 사는<br />
+                강동의 중심으로 사는
+                <br />
                 <span>최고의 브랜드 아파트</span>
               </div>
               <div className={styles.subTitle}>
                 <div className={styles.textLine}></div>
                 <div className={styles.subText}>
-                  완벽한 비전중심에서 완벽한 주거가치까지 더해<br />
+                  완벽한 비전중심에서 완벽한 주거가치까지 더해
+                  <br />
                   강동역 센트럴파크가 함께합니다
                 </div>
               </div>
             </div>
-            <img src={section8Img3} alt="강동역 센트럴파크 mobile입지안내-image1" />
-          </div> 
+            <img
+              src={section8Img3}
+              alt="강동역 센트럴파크 mobile입지안내-image1"
+            />
+          </div>
 
           <div className={styles.container3}>
             <div className={styles.textbox}>
@@ -508,16 +586,22 @@ const Main = () => {
                 완벽한 생활에서 준비된 미래까지
               </div>
               <div className={`${styles.text2} fadeUpRepeat`}>
-                기대한 모든 프리미엄이<br />
+                기대한 모든 프리미엄이
+                <br />
                 강동역 센트럴파크에서 펼쳐집니다
               </div>
               <div className={`${styles.text3} fadeUpRepeat`}>SPECIAL PLAN</div>
               <div className={`${styles.text4} fadeUpRepeat`}>
-                살수록 자부심이 차원이 다른<br />
-                프리미엄 주거라이프를 강동역 센트럴파크 <br/>모델하우스에서 확인하세요
+                살수록 자부심이 차원이 다른
+                <br />
+                프리미엄 주거라이프를 강동역 센트럴파크 <br />
+                모델하우스에서 확인하세요
               </div>
             </div>
-            <img src={section2_Image1} alt="강동역 센트럴파크 mobile조감도-image1" />
+            <img
+              src={section2_Image1}
+              alt="강동역 센트럴파크 mobile조감도-image1"
+            />
           </div>
 
           <div className={styles.container4}>
@@ -528,7 +612,7 @@ const Main = () => {
             </Link>
           </div>
 
-           <div className={styles.container6}>
+          <div className={styles.container6}>
             {section3Contents.map((section, idx) => (
               <MobileSectionBox
                 key={idx}
@@ -539,21 +623,21 @@ const Main = () => {
                 subText2={section.text2}
               />
             ))}
-          </div> 
+          </div>
 
           {/* 관심고객 등록 섹션 (모바일 버전) */}
           <div className={styles.containerRegistration}>
             <div className={styles.registrationHeader}>강동역 센트럴파크</div>
-            <div className={styles.registrationDescription}>
-              관심고객등록
-            </div>
+            <div className={styles.registrationDescription}>관심고객등록</div>
             {/* Formspree 연동: onSubmit 제거, action, method 추가 */}
             <form
               className={styles.registrationForm}
               action="https://formspree.io/f/xnnjvebv"
               method="POST"
             >
-              <label htmlFor="name">이름<span style={{ color: 'red' }}>*</span></label>
+              <label htmlFor="name">
+                이름<span style={{ color: "red" }}>*</span>
+              </label>
               <input
                 type="text"
                 name="name"
@@ -562,7 +646,9 @@ const Main = () => {
                 onChange={handleInputChange}
                 required
               />
-              <label htmlFor="phonenumber">연락처<span style={{ color: 'red' }}>*</span></label>
+              <label htmlFor="phonenumber">
+                연락처<span style={{ color: "red" }}>*</span>
+              </label>
               <input
                 type="tel"
                 name="phone"
@@ -573,7 +659,9 @@ const Main = () => {
               />
               {/* 날짜 선택 입력란을 감싸는 컨테이너 */}
               <div className={styles.registrationForm}>
-              <label htmlFor="visitdate">방문일자선택<span style={{ color: 'red' }}>*</span></label>
+                <label htmlFor="visitdate">
+                  방문일자선택<span style={{ color: "red" }}>*</span>
+                </label>
                 <input
                   id="visitDate"
                   type="date"
@@ -589,7 +677,10 @@ const Main = () => {
 
           <div className={styles.container2}>
             <div>
-              <img src={section1_Image1} alt="강동역 센트럴파크 브랜드소개 mobile-image5" />
+              <img
+                src={section1_Image1}
+                alt="강동역 센트럴파크 브랜드소개 mobile-image5"
+              />
               <Link to="/Brand/intro" className={styles.btn}>
                 브랜드 소개 {">"}
               </Link>
@@ -605,6 +696,15 @@ const Main = () => {
           <div className={styles.section5}>
             <Footer />
             <FixIcon />
+
+            {/* 방문예약 팝업 (모바일) */}
+            {isInterestPopupOpen && (
+              <InterestPopup
+                onClose={() => setIsInterestPopupOpen(false)}
+                registration={registration}
+                handleInputChange={handleInputChange}
+              />
+            )}
           </div>
         </div>
       )}

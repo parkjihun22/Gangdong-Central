@@ -46,7 +46,7 @@
 .mainImageTextBox {
     font-weight: 900;
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #FFFFFF;
@@ -590,6 +590,7 @@
 //모바일 메인 스타일
 
 .mobileMain {
+    width: 100vw;
 
     .imageContainer {
         
@@ -743,7 +744,8 @@
         justify-content: flex-start;
         align-items: flex-start;
 
-        padding: 10vw 0 0 7vw;
+        padding: 10vw 0 0 0;
+        width: 100vw;
 
         font-family: 'HakgyoansimBareonbatangB';
         font-weight: 700;
@@ -774,17 +776,33 @@
             margin: 15vw 0 17vw 3vw;
             font-size: 3vw;
             color: #241400;
+            z-index: 200;
 
             a {
                 text-decoration: none;
-                color: inherit;
+                /* 밑줄 제거 */
+                color: #000000;
+                /* 검정색으로 변경 */
+
+                font-size: 3vw;
+                /* 글자 크기 키우기 */
+                font-weight: bold;
+                /* 가독성을 위해 굵게 설정 */
+                background: none;
+                /* 버튼 스타일 제거 */
+                border: none;
+                /* 버튼 테두리 제거 */
+                padding: 0;
+                /* 내부 여백 제거 */
+                display: inline;
+                /* 버튼처럼 보이지 않도록 inline 설정 */
             }
         }
 
     }
 
     .container2 {
-        width: 100%;
+        width: 100vw;
         height: 100%;
 
         img {
@@ -817,9 +835,8 @@
 
     .container3 {
         position: relative;
-        padding-top: 12vw;
-        padding-left: 5.5vw;
 
+        width: 100%;
         height: 80vw;
         background: linear-gradient(to bottom, #fff6ea 85%, #c4825f 15%);
 
@@ -997,7 +1014,7 @@
         align-items: flex-start;
 
         margin: 4vw 0 0 2.5vw;
-        width: 100%;
+    
 
         .title {
             color: #2d3c49;
