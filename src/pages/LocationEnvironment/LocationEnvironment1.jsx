@@ -69,12 +69,12 @@ const LocationEnvironment1 = () => {
 					<meta name="description" content="강동역 센트럴파크의 입지 정보를 확인하세요. 뛰어난 교통망, 생활 인프라, 교육 및 쇼핑 시설 등 편리한 주변 환경을 소개하며, 평택의 중심에서 누릴 수 있는 생활의 편리함과 가치를 제공합니다" />
 					<meta property="og:title" content="강동역 센트럴파크 - 입지안내" />
 					<meta property="og:description" content="강동역 센트럴파크의 입지 정보를 확인하세요. 뛰어난 교통망, 생활 인프라, 교육 및 쇼핑 시설 등 편리한 주변 환경을 소개하며, 평택의 중심에서 누릴 수 있는 생활의 편리함과 가치를 제공합니다" />
-					<meta property="og:image" content="http://www.kikaporn.com/Main1.png" />
-					<meta property="og:url" content="http://www.kikaporn.com/LocationEnvironment/intro" />
+					<meta property="og:image" content="www.donnyien.com/Main1.png" />
+					<meta property="og:url" content="www.donnyien.com/LocationEnvironment/intro" />
 					<meta name="twitter:title" content="강동역 센트럴파크 - 입지안내" />
 					<meta name="twitter:description" content="강동역 센트럴파크의 입지 정보를 확인하세요. 뛰어난 교통망, 생활 인프라, 교육 및 쇼핑 시설 등 편리한 주변 환경을 소개하며, 평택의 중심에서 누릴 수 있는 생활의 편리함과 가치를 제공합니다" />
-					<meta name="twitter:image" content="http://www.kikaporn.com/Main1.png" />
-					<meta name="twitter:url" content="http://www.kikaporn.com/LocationEnvironment/intro" />
+					<meta name="twitter:image" content="www.donnyien.com/Main1.png" />
+					<meta name="twitter:url" content="www.donnyien.com/LocationEnvironment/intro" />
 					</Helmet> 	
 
 			<Header isChanged={isScroll} />

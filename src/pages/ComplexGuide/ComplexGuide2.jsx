@@ -54,12 +54,12 @@ const ComplexGuide1 = () => {
 				<meta name="description" content="강동역 센트럴파크의 호수 배치도를 통해 각 세대의 위치와 전망을 확인하세요. 주거 만족도를 높이는 체계적인 배치 설계로 더 나은 라이프스타일을 제안합니다." />
 				<meta property="og:title" content="강동역 센트럴파크 - 호수배치도" />
 				<meta property="og:description" content="강동역 센트럴파크의 호수 배치도를 통해 각 세대의 위치와 전망을 확인하세요. 주거 만족도를 높이는 체계적인 배치 설계로 더 나은 라이프스타일을 제안합니다." />
-				<meta property="og:image" content="http://www.kikaporn.com/Main1.png" />
-				<meta property="og:url" content="http://www.kikaporn.com/ComplexGuide/detailintro" />
+				<meta property="og:image" content="www.donnyien.com/Main1.png" />
+				<meta property="og:url" content="www.donnyien.com/ComplexGuide/detailintro" />
 				<meta name="twitter:title" content="강동역 센트럴파크 - 호수배치도" />
 				<meta name="twitter:description" content="강동역 센트럴파크의 호수 배치도를 통해 각 세대의 위치와 전망을 확인하세요. 주거 만족도를 높이는 체계적인 배치 설계로 더 나은 라이프스타일을 제안합니다." />
-				<meta name="twitter:image" content="http://www.kikaporn.com/Main1.png" />
-				<meta name="twitter:url" content="http://www.kikaporn.com/ComplexGuide/detailintro" />
+				<meta name="twitter:image" content="www.donnyien.com/Main1.png" />
+				<meta name="twitter:url" content="www.donnyien.com/ComplexGuide/detailintro" />
 			</Helmet> 
 
 			<Header isChanged={isScroll} />
@@ -72,7 +72,7 @@ const ComplexGuide1 = () => {
 			</p>
 
 			<div className={styles.textBox}>
-				<div>대강동역 센트럴파크가 눈부신 가치 위에</div>
+				<div>강동역 센트럴파크가 눈부신 가치 위에</div>
 				<div>새로운 자부심으로 찾아옵니다.</div>
 			</div>
 

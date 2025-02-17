@@ -73,12 +73,12 @@ const ComplexGuide1 = () => {
           <meta name="description" content="강동역 센트럴파크차의 모집 공고는 분양 전 단계에서 중요한 안내문입니다. 이 페이지에서는 모집 공고에 포함된 중요한 날짜, 자격 조건, 필요한 서류 등을 명확하게 안내하여 예비 청약자들이 혼동 없이 청약을 준비할 수 있도록 지원합니다. 모집 공고를 통해 필수 정보들을 빠짐없이 체크하세요." />
           <meta property="og:title" content="강동역 센트럴파크 - 인터넷청약" />
           <meta property="og:description" content="강동역 센트럴파크의 모집 공고는 분양 전 단계에서 중요한 안내문입니다. 이 페이지에서는 모집 공고에 포함된 중요한 날짜, 자격 조건, 필요한 서류 등을 명확하게 안내하여 예비 청약자들이 혼동 없이 청약을 준비할 수 있도록 지원합니다. 모집 공고를 통해 필수 정보들을 빠짐없이 체크하세요." />
-          <meta property="og:image" content="http://www.kikaporn.com/Main1.png" />
-          <meta property="og:url" content="http://www.kikaporn.com/SalesInfo/announcement" />
+          <meta property="og:image" content="www.donnyien.com/Main1.png" />
+          <meta property="og:url" content="www.donnyien.com/SalesInfo/announcement" />
           <meta name="twitter:title" content="강동역 센트럴파크- 인터넷청약" />
           <meta name="twitter:description" content="강동역 센트럴파크의 모집 공고는 분양 전 단계에서 중요한 안내문입니다. 이 페이지에서는 모집 공고에 포함된 중요한 날짜, 자격 조건, 필요한 서류 등을 명확하게 안내하여 예비 청약자들이 혼동 없이 청약을 준비할 수 있도록 지원합니다. 모집 공고를 통해 필수 정보들을 빠짐없이 체크하세요." />
-          <meta name="twitter:image" content="http://www.kikaporn.com/Main1.png" />
-          <meta name="twitter:url" content="http://www.kikaporn.com/SalesInfo/announcement" />
+          <meta name="twitter:image" content="www.donnyien.com/Main1.png" />
+          <meta name="twitter:url" content="www.donnyien.com/SalesInfo/announcement" />
           </Helmet>
 
             <Header isChanged={isScroll} />

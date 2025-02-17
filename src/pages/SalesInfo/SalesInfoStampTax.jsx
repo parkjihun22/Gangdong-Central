@@ -55,12 +55,12 @@ const ComplexGuide1 = () => {
           <meta name="description" content="강동역 센트럴파크의 인지세 안내 페이지는 분양과 관련된 세금 정보를 제공합니다. 인지세는 계약서 작성 시 부과되는 세금으로, 이를 사전에 파악하고 준비하는 것이 중요합니다. 이 페이지에서는 인지세의 계산 방법, 세액, 납부 절차 등을 쉽게 설명하여 고객들이 정확하게 준비할 수 있도록 돕습니다." />
           <meta property="og:title" content="강동역 센트럴파크 - 인지세안내" />
           <meta property="og:description" content="강동역 센트럴파크의 인지세 안내 페이지는 분양과 관련된 세금 정보를 제공합니다. 인지세는 계약서 작성 시 부과되는 세금으로, 이를 사전에 파악하고 준비하는 것이 중요합니다. 이 페이지에서는 인지세의 계산 방법, 세액, 납부 절차 등을 쉽게 설명하여 고객들이 정확하게 준비할 수 있도록 돕습니다." />
-          <meta property="og:image" content="http://www.kikaporn.com/Main1.png" />
-          <meta property="og:url" content="http://www.kikaporn.com/SalesInfo/stampTax" />
+          <meta property="og:image" content="www.donnyien.com/Main1.png" />
+          <meta property="og:url" content="www.donnyien.com/SalesInfo/stampTax" />
           <meta name="twitter:title" content="강동역 센트럴파크 - 인지세안내" />
           <meta name="twitter:description" content="강동역 센트럴파크의 인지세 안내 페이지는 분양과 관련된 세금 정보를 제공합니다. 인지세는 계약서 작성 시 부과되는 세금으로, 이를 사전에 파악하고 준비하는 것이 중요합니다. 이 페이지에서는 인지세의 계산 방법, 세액, 납부 절차 등을 쉽게 설명하여 고객들이 정확하게 준비할 수 있도록 돕습니다." />
-          <meta name="twitter:image" content="http://www.kikaporn.com/Main1.png" />
-          <meta name="twitter:url" content="http://www.kikaporn.com/SalesInfo/stampTax" />
+          <meta name="twitter:image" content="www.donnyien.com/Main1.png" />
+          <meta name="twitter:url" content="www.donnyien.com/SalesInfo/stampTax" />
           </Helmet>
       
 
