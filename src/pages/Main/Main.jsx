@@ -401,7 +401,7 @@ const Main = () => {
                 {/* Formspree 연동: onSubmit 제거, action, method 추가 */}
                 <form
                   className={styles.registrationForm}
-                  action="https://formspree.io/f/xnnjvebv"
+                  action="https://formspree.io/f/xwpvwywq"
                   method="POST"
                 >
                   <label htmlFor="name">
@@ -632,7 +632,7 @@ const Main = () => {
             {/* Formspree 연동: onSubmit 제거, action, method 추가 */}
             <form
               className={styles.registrationForm}
-              action="https://formspree.io/f/xnnjvebv"
+              action="https://formspree.io/f/xwpvwywq"
               method="POST"
             >
               <label htmlFor="name">
