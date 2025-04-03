@@ -215,7 +215,7 @@ const Main = () => {
                   <img
                     src={subpinkimg}
                     className={styles.subPinkImg}
-                    alt="브레인시티푸르지오 관심고객등록"
+                    alt="강동역 센트럴파크 관심고객등록"
                   />
                 </button>
               </div>

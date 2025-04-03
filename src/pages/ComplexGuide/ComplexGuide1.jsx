@@ -54,12 +54,12 @@ const ComplexGuide1 = () => {
 					<meta name="description" content="강동역 센트럴파크의 단지 배치도를 통해 각 동의 위치와 편의시설의 배치를 확인하세요. 효율적인 동선 설계와 조경 공간, 입주민의 생활 편의를 고려한 배치를 상세히 안내합니다." />
 					<meta property="og:title" content="강동역 센트럴파크 - 단지배치도" />
 					<meta property="og:description" content="강동역 센트럴파크의 단지 배치도를 통해 각 동의 위치와 편의시설의 배치를 확인하세요. 효율적인 동선 설계와 조경 공간, 입주민의 생활 편의를 고려한 배치를 상세히 안내합니다." />
-					<meta property="og:image" content="www.donnyien.com/Main1.png" />
-					<meta property="og:url" content="www.donnyien.com/ComplexGuide/intro" />
+					<meta property="og:image" content="https://www.gidam.kr/Main1.png" />
+					<meta property="og:url" content="https://www.gidam.kr/ComplexGuide/intro" />
 					<meta name="twitter:title" content="강동역 센트럴파크 - 단지배치도" />
 					<meta name="twitter:description" content="강동역 센트럴파크의 단지 배치도를 통해 각 동의 위치와 편의시설의 배치를 확인하세요. 효율적인 동선 설계와 조경 공간, 입주민의 생활 편의를 고려한 배치를 상세히 안내합니다." />
-					<meta name="twitter:image" content="www.donnyien.com/Main1.png" />
-					<meta name="twitter:url" content="www.donnyien.com/ComplexGuide/intro" />
+					<meta name="twitter:image" content="https://www.gidam.kr/Main1.png" />
+					<meta name="twitter:url" content="https://www.gidam.kr/ComplexGuide/intro" />
 					</Helmet>  
 
 			<Header isChanged={isScroll} />

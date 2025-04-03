@@ -51,12 +51,12 @@ const LocationEnvironment1 = () => {
 					<meta name="description" content="강동역 센트럴파크의 차별화된 프리미엄을 만나보세요. 고급스러운 디자인, 첨단 기술이 결합된 설계, 입주민을 위한 특별한 혜택 등을 통해 푸르지오만의 독보적인 가치를 제공합니다." />
 					<meta property="og:title" content="강동역 센트럴파크 - 프리미엄" />
 					<meta property="og:description" content="강동역 센트럴파크의 차별화된 프리미엄을 만나보세요. 고급스러운 디자인, 첨단 기술이 결합된 설계, 입주민을 위한 특별한 혜택 등을 통해 푸르지오만의 독보적인 가치를 제공합니다." />
-					<meta property="og:image" content="www.donnyien.com/Main1.png" />
-					<meta property="og:url" content="www.donnyien.com/LocationEnvironment/primium" />
+					<meta property="og:image" content="https://www.gidam.kr/Main1.png" />
+					<meta property="og:url" content="https://www.gidam.kr/LocationEnvironment/primium" />
 					<meta name="twitter:title" content="강동역 센트럴파크- 프리미엄" />
 					<meta name="twitter:description" content="강동역 센트럴파크의 차별화된 프리미엄을 만나보세요. 고급스러운 디자인, 첨단 기술이 결합된 설계, 입주민을 위한 특별한 혜택 등을 통해 푸르지오만의 독보적인 가치를 제공합니다." />
-					<meta name="twitter:image" content="www.donnyien.com/Main1.png" />
-					<meta name="twitter:url" content="www.donnyien.com/LocationEnvironment/primium" />
+					<meta name="twitter:image" content="https://www.gidam.kr/Main1.png" />
+					<meta name="twitter:url" content="https://www.gidam.kr/LocationEnvironment/primium" />
 					</Helmet> 		
 			
 
