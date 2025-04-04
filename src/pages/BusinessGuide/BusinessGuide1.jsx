@@ -55,13 +55,13 @@ const BusinessGuide1 = () => {
 
 <Helmet>
 					<title>강동역 센트럴파크- 사업안내</title>
-					<meta name="description" content="강동역 센트럴파크의 사업개요를 통해 프로젝트의 비전과 가치를 확인하세요. 단지 설계, 개발 목표, 주변 환경과의 조화 등을 중점적으로 설명하여 평택에서의 새로운 주거 중심지로서의 가능성을 보여드립니다." />
+					<meta name="description" content="강동역 센트럴파크의 사업개요를 통해 프로젝트의 비전과 가치를 확인하세요. 단지 설계, 개발 목표, 주변 환경과의 조화 등을 중점적으로 설명하여 강동에서의 새로운 주거 중심지로서의 가능성을 보여드립니다." />
 					<meta property="og:title" content="강동역 센트럴파크 - 사업안내" />
-					<meta property="og:description" content="강동역 센트럴파크의 사업개요를 통해 프로젝트의 비전과 가치를 확인하세요. 단지 설계, 개발 목표, 주변 환경과의 조화 등을 중점적으로 설명하여 평택에서의 새로운 주거 중심지로서의 가능성을 보여드립니다." />
+					<meta property="og:description" content="강동역 센트럴파크의 사업개요를 통해 프로젝트의 비전과 가치를 확인하세요. 단지 설계, 개발 목표, 주변 환경과의 조화 등을 중점적으로 설명하여 강동에서의 새로운 주거 중심지로서의 가능성을 보여드립니다." />
 					<meta property="og:image" content="https://www.gidam.kr/Main1.png" />
 					<meta property="og:url" content="www.donnyien.comBusinessGuide/intro" />
 					<meta name="twitter:title" content="강동역 센트럴파크 - 사업안내" />
-					<meta name="twitter:description" content="강동역 센트럴파크의 사업개요를 통해 프로젝트의 비전과 가치를 확인하세요. 단지 설계, 개발 목표, 주변 환경과의 조화 등을 중점적으로 설명하여 평택에서의 새로운 주거 중심지로서의 가능성을 보여드립니다." />
+					<meta name="twitter:description" content="강동역 센트럴파크의 사업개요를 통해 프로젝트의 비전과 가치를 확인하세요. 단지 설계, 개발 목표, 주변 환경과의 조화 등을 중점적으로 설명하여 강동에서의 새로운 주거 중심지로서의 가능성을 보여드립니다." />
 					<meta name="twitter:image" content="https://www.gidam.kr/Main1.png" />
 					<meta name="twitter:url" content="https://www.gidam.kr/BusinessGuide/intro" />
 					</Helmet>       

@@ -53,13 +53,13 @@ const BusinessGuide2 = () => {
 
 <Helmet>
 					<title>강동역 센트럴파크- 분양일정</title>
-					<meta name="description" content="강동역 센트럴파크의 최신 분양일정을 확인하세요. 청약 일정, 분양 절차, 주요 조건을 명확히 안내하여 분양 준비에 필요한 정보를 제공합니다. 평택에서 새로운 라이프스타일을 시작할 기회를 놓치지 마세요. 힐스테이트의 고급스러운 주거공간에서 미래를 계획해보세요." />
+					<meta name="description" content="강동역 센트럴파크의 최신 분양일정을 확인하세요. 청약 일정, 분양 절차, 주요 조건을 명확히 안내하여 분양 준비에 필요한 정보를 제공합니다. 강동에서 새로운 라이프스타일을 시작할 기회를 놓치지 마세요. 힐스테이트의 고급스러운 주거공간에서 미래를 계획해보세요." />
 					<meta property="og:title" content="강동역 센트럴파크 - 분양일정" />
-					<meta property="og:description" content="강동역 센트럴파크의 최신 분양일정을 확인하세요. 청약 일정, 분양 절차, 주요 조건을 명확히 안내하여 분양 준비에 필요한 정보를 제공합니다. 평택에서 새로운 라이프스타일을 시작할 기회를 놓치지 마세요. 힐스테이트의 고급스러운 주거공간에서 미래를 계획해보세요." />
+					<meta property="og:description" content="강동역 센트럴파크의 최신 분양일정을 확인하세요. 청약 일정, 분양 절차, 주요 조건을 명확히 안내하여 분양 준비에 필요한 정보를 제공합니다. 강동에서 새로운 라이프스타일을 시작할 기회를 놓치지 마세요. 힐스테이트의 고급스러운 주거공간에서 미래를 계획해보세요." />
 					<meta property="og:image" content="https://www.gidam.kr/Main1.png" />
 					<meta property="og:url" content="https://www.gidam.kr/BusinessGuide/plan" />
 					<meta name="twitter:title" content="mainlogo.png - 분양일정" />
-					<meta name="twitter:description" content="강동역 센트럴파크의 최신 분양일정을 확인하세요. 청약 일정, 분양 절차, 주요 조건을 명확히 안내하여 분양 준비에 필요한 정보를 제공합니다. 평택에서 새로운 라이프스타일을 시작할 기회를 놓치지 마세요. 힐스테이트의 고급스러운 주거공간에서 미래를 계획해보세요." />
+					<meta name="twitter:description" content="강동역 센트럴파크의 최신 분양일정을 확인하세요. 청약 일정, 분양 절차, 주요 조건을 명확히 안내하여 분양 준비에 필요한 정보를 제공합니다. 강동에서 새로운 라이프스타일을 시작할 기회를 놓치지 마세요. 힐스테이트의 고급스러운 주거공간에서 미래를 계획해보세요." />
 					<meta name="twitter:image" content="https://www.gidam.kr/Main1.png" />
 					<meta name="twitter:url" content="https://www.gidam.kr/BusinessGuide/plan" />
 					</Helmet>   

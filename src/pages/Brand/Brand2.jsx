@@ -45,13 +45,13 @@ const Brand2 = () => {
 
 					<Helmet>
 					<title>강동역 센트럴파크 - 홍보영상</title>
-					<meta name="description" content="강동역 센트럴파크의 홍보영상을 통해 단지의 매력적인 디자인과 최신 편의시설을 생생하게 만나보세요. 현대적 감각과 고급스러움을 결합한 주거 환경, 평택의 중심에서 경험할 수 있는 새로운 라이프스타일을 영상으로 확인하세요." />
+					<meta name="description" content="강동역 센트럴파크의 홍보영상을 통해 단지의 매력적인 디자인과 최신 편의시설을 생생하게 만나보세요. 현대적 감각과 고급스러움을 결합한 주거 환경, 강동의 중심에서 경험할 수 있는 새로운 라이프스타일을 영상으로 확인하세요." />
 					<meta property="og:title" content="강동역 센트럴파크 - 홍보영상" />
-					<meta property="og:description" content="강동역 센트럴파크의 홍보영상을 통해 단지의 매력적인 디자인과 최신 편의시설을 생생하게 만나보세요. 현대적 감각과 고급스러움을 결합한 주거 환경, 평택의 중심에서 경험할 수 있는 새로운 라이프스타일을 영상으로 확인하세요." />
+					<meta property="og:description" content="강동역 센트럴파크의 홍보영상을 통해 단지의 매력적인 디자인과 최신 편의시설을 생생하게 만나보세요. 현대적 감각과 고급스러움을 결합한 주거 환경, 강동의 중심에서 경험할 수 있는 새로운 라이프스타일을 영상으로 확인하세요." />
 					<meta property="og:image" content="https://www.gidam.kr/Main1.png" />
 					<meta property="og:url" content="https://www.gidam.kr/Brand/video" />
 					<meta name="twitter:title" content="강동역 센트럴파크 - 홍보영상" />
-					<meta name="twitter:description" content="강동역 센트럴파크의 홍보영상을 통해 단지의 매력적인 디자인과 최신 편의시설을 생생하게 만나보세요. 현대적 감각과 고급스러움을 결합한 주거 환경, 평택의 중심에서 경험할 수 있는 새로운 라이프스타일을 영상으로 확인하세요." />
+					<meta name="twitter:description" content="강동역 센트럴파크의 홍보영상을 통해 단지의 매력적인 디자인과 최신 편의시설을 생생하게 만나보세요. 현대적 감각과 고급스러움을 결합한 주거 환경, 강동의 중심에서 경험할 수 있는 새로운 라이프스타일을 영상으로 확인하세요." />
 					<meta name="twitter:image" content="https://www.gidam.kr/Main1.png" />
 					<meta name="twitter:url" content="https://www.gidam.kr/Brand/video" />
 					</Helmet>       
@@ -65,7 +65,7 @@ const Brand2 = () => {
 
 						{/* <h1> 태그를 사용하여 페이지 제목 설정 (SEO 최적화) */}
 						<h1 className={styles.screenReaderOnly}>강동역 센트럴파크 - 홍보영상</h1>
-						<p className={styles.screenReaderOnly}>강동역 센트럴파크의 홍보영상을 통해 단지의 매력적인 디자인과 최신 편의시설을 생생하게 만나보세요. 현대적 감각과 고급스러움을 결합한 주거 환경, 평택의 중심에서 경험할 수 있는 새로운 라이프스타일을 영상으로 확인하세요.
+						<p className={styles.screenReaderOnly}>강동역 센트럴파크의 홍보영상을 통해 단지의 매력적인 디자인과 최신 편의시설을 생생하게 만나보세요. 현대적 감각과 고급스러움을 결합한 주거 환경, 강동의 중심에서 경험할 수 있는 새로운 라이프스타일을 영상으로 확인하세요.
 						</p>	
 
 			<div className={`${styles.textBox} ${isTextVisible ? styles.active : ''}`}>

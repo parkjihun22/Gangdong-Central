@@ -71,7 +71,7 @@ const Brand1 = () => {
             <MenuBar contents={menuContents} />
             {/* <h1> 태그를 사용하여 페이지 제목 설정 (SEO 최적화) */}
             <h1 className={styles.screenReaderOnly}>강동역 센트럴파크 - 브랜드소개</h1>
-			<p className={styles.screenReaderOnly}>강동역 센트럴파크의 신뢰와 품질을 최우선으로 여기는 브랜드입니다. 최첨단 설계와 고급 자재를 사용하여 입주자에게 최고의 주거 환경을 제공합니다. 지속적인 혁신과 고객 만족을 위한 브랜드 철학을 바탕으로, 미래 지향적인 주택을 제시하는 평택브레인시티 푸르지오의 브랜드 가치를 경험해보세요
+			<p className={styles.screenReaderOnly}>강동역 센트럴파크의 신뢰와 품질을 최우선으로 여기는 브랜드입니다. 최첨단 설계와 고급 자재를 사용하여 입주자에게 최고의 주거 환경을 제공합니다. 지속적인 혁신과 고객 만족을 위한 브랜드 철학을 바탕으로, 미래 지향적인 주택을 제시하는 강동역센트럴파크의 브랜드 가치를 경험해보세요
 			</p>	
 
             <div className={`${styles.textBox} ${isTextVisible ? styles.active : ''}`}>
